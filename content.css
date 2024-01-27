@@ -1,0 +1,178 @@
+body {
+    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif
+}
+
+/* Navbar - Unused */
+.navbar {
+    background-color: white;
+    top: -1px; /* Adjust this value to control when the navbar sticks */
+    z-index: 10; /* Higher than other elements so it doesn't go under anything */
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 0 10%;
+    border-bottom: 1px solid lightgrey;
+  }
+  
+  .navbar-container {
+    color: white;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .navbar-container::before {
+    content: "";
+    height: 1px; /* The height of your cover, adjust as needed */
+    margin-top: -1px; /* Negative margin to pull the navbar up by its own height */
+  }
+  
+  .navbar-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .navbar-link {
+    position: relative;
+    margin: 0 20px;
+    display: inherit;
+    width: inherit;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    z-index: 1;
+  }
+  
+  .navbar-link:hover {
+    background-color: white;
+    color: black !important;
+  }
+  
+  .navbar-link:hover a {
+    color: black !important;
+    transform: scale(1.05);
+  }
+  
+  .navbar-item {
+    padding: 5px 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: grey;
+    transition: all 0.2s ease;
+  }
+
+/* Main Page */
+.page-wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.side-bar {
+    position: sticky;
+    top: -1px;
+    z-index: 10;
+    width: 16%;
+    margin-top: 3%;
+    margin-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.author_avatar {
+    border-radius: 50%;
+    padding: 1px;
+    border: 1px solid #f2f3f3;
+    max-width: 175px;
+}
+.author_name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.contact-list {
+    margin-top: 7%;
+    list-style: none;
+    padding: 0;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact i {
+    margin-right: 8px;
+    width: 30px;
+    text-align: center;
+}
+
+#weixin {
+    display: block;
+}
+#weixin:hover {
+    color: #7bb32e;
+    cursor: pointer;
+}
+#weixin-click {
+    display: none;
+}
+#ins:hover {
+    color: #e4405f;
+}
+#email:hover {
+    color: darkkhaki;
+}
+#github:hover {
+    color: grey;
+}
+#LinkedIn:hover {
+    color: #0077b5;
+}
+
+.fa-envelope { color: #000000; }
+.fa-linkedin { color: #0077b5; }
+.fa-github { color: #333; }
+.fa-instagram { color: #e4405f; }
+.fa-weixin { color: #7bb32e; }
+
+.main-paragraph {
+    padding-left: 6%;
+    padding-right: 16%;
+}
+h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#inline-hyperlink {
+    color: blue;
+    text-decoration: underline;
+}
+#inline-hyperlink:hover {
+    color: lightskyblue;  /* default link color usage */
+}
+p {
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+.grey-line {
+    height: 10px;
+    width: 100%;
+    color: rgb(181, 181, 181);
+}

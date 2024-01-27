@@ -11,7 +11,9 @@ body {
     display: inline-block;
     width: 100%;
     padding: 0 10%;
+    border-top: 3px solid darkgrey;
     border-bottom: 1px solid lightgrey;
+    animation: slideInFromBottom 0.5s ease-out;
   }
   
   .navbar-container {
@@ -76,6 +78,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    animation: slideInFromBottom 0.5s ease-out;
 }
 .side-bar {
     position: sticky;
@@ -172,7 +175,20 @@ p {
     line-height: 150%;
 }
 .grey-line {
-    height: 10px;
+    height: 1px;
     width: 100%;
-    color: rgb(181, 181, 181);
+    background-color: rgb(181, 181, 181);
+}
+
+
+
+@keyframes slideInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(5vh); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }

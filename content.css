@@ -1,71 +1,31 @@
 body {
-    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif
+    margin-right: 1.8%;
+    margin-top: 1.5%;
+    margin-left: 0;
+    margin-bottom: 0;
 }
-
 /* Navbar - Unused */
 .navbar {
-    background-color: white;
-    top: -1px; /* Adjust this value to control when the navbar sticks */
-    z-index: 10; /* Higher than other elements so it doesn't go under anything */
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    padding: 0 10%;
     border-top: 3px solid darkgrey;
     border-bottom: 1px solid lightgrey;
-    animation: slideInFromBottom 0.5s ease-out;
-  }
-  
-  .navbar-container {
-    color: white;
-    padding: 10px 0;
-    text-align: left;
     width: 100%;
-  }
-  
-  .navbar-container::before {
-    content: "";
-    height: 1px; /* The height of your cover, adjust as needed */
-    margin-top: -1px; /* Negative margin to pull the navbar up by its own height */
-  }
-  
-  .navbar-list {
+    padding: 1.5vh;
+    font-size: 5vh;
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
     justify-content: space-between;
-    position: relative;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
-  
-  .navbar-link {
-    position: relative;
-    margin: 0 20px;
-    display: inherit;
-    width: inherit;
-    border-radius: 5px;
-    transition: all 0.2s ease;
-    z-index: 1;
-  }
-  
-  .navbar-link:hover {
-    background-color: white;
-    color: black !important;
-  }
-  
-  .navbar-link:hover a {
-    color: black !important;
-    transform: scale(1.05);
-  }
-  
-  .navbar-item {
-    padding: 5px 30px;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+}
+.navbar-narrow {
+    display: none;
+}
+.navbar-item {
     color: grey;
-    transition: all 0.2s ease;
-  }
+    transition: all 0.5s ease;
+}
+.navbar-item:hover {
+    transform: scale(1.05);
+    color: black;
+}
 
 /* Main Page */
 .page-wrapper {
@@ -79,31 +39,31 @@ body {
     flex-direction: row;
     justify-content:space-around;
     animation: slideInFromBottom 0.5s ease-out;
+    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 }
-.side-bar {
-    position: sticky;
-    top: -1px;
-    z-index: 10;
-    width: 16%;
-    margin-top: 3%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .author_avatar {
+    position: sticky;
+    top: 20px;
+    z-index: 10;
     border-radius: 50%;
     padding: 1px;
     border: 1px solid #f2f3f3;
     max-width: 175px;
 }
 .author_name {
+    position: sticky;
+    top: 219px;
+    z-index: 10;
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 5%;
 }
 
 .contact-list {
+    position: sticky;
+    top: 259px;
+    z-index: 10;
     margin-top: 7%;
     list-style: none;
     padding: 0;
@@ -154,6 +114,7 @@ body {
 .main-paragraph {
     padding-left: 6%;
     padding-right: 16%;
+    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 }
 h1 {
     font-size: 2.3rem;
@@ -170,6 +131,9 @@ a {
 #inline-hyperlink:hover {
     color: lightskyblue;  /* default link color usage */
 }
+a:hover {
+    color: lightskyblue;
+}
 p {
     font-size: 1.2rem;
     line-height: 150%;
@@ -180,7 +144,9 @@ p {
     background-color: rgb(181, 181, 181);
 }
 
-
+.navbar-link-narrow {
+    display: none;
+}
 
 @keyframes slideInFromBottom {
     0% {
@@ -190,5 +156,66 @@ p {
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+}
+@keyframes fading {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes entering {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    50% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+.author-avatar-narrow {
+    display: none;
+}
+@media(max-width: 800px){
+    .navbar {
+        display: none;
+    }
+    .icon-narrow {
+        color: black;
+    }
+    .navbar-narrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3.5vh;
+        border-top: 3px solid darkgrey;
+        border-bottom: 1px solid lightgrey;
+        width: 100%;
+        padding: 0.5vh;
+        display: flex;
+        justify-content: space-around;
+        font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    }
+    .author_avatar {
+        display: none;
+    }
+    .author_name {
+        display: none;
+    }
+    .contact-list {
+        display: none;
+    }
+    .author-avatar-narrow {
+        display: flex;
+        border-radius: 50%;
     }
 }

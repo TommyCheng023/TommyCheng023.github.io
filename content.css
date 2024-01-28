@@ -219,6 +219,7 @@ p {
         display: none;
     }
     .author-avatar-narrow {
+        margin-left: -2%;
         display: flex;
         border-radius: 50%;
     }
@@ -226,9 +227,16 @@ p {
         display: block;
         color: grey;
     }
+    .page-wrapper {
+        margin-left: 22%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
     .main-paragraph {
-        padding-left: 35%;
-        padding-right: 16%;
         font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    }
+    .main-text {
+        padding: 0%;
     }
 }

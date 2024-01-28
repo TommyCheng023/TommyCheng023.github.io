@@ -1,5 +1,5 @@
 body {
-    margin-right: 1.8%;
+    margin-right: 0;
     margin-top: 1.5%;
     margin-left: 0;
     margin-bottom: 0;
@@ -9,7 +9,6 @@ body {
 .navbar {
     border-top: 3px solid darkgrey;
     border-bottom: 1px solid lightgrey;
-    width: 100%;
     padding: 1.5vh;
     font-size: 5vh;
     display: flex;
@@ -82,7 +81,10 @@ body {
     width: 30px;
     text-align: center;
 }
-
+#loc:hover {
+    color: rgb(33, 33, 33);
+    cursor: pointer;
+}
 #weixin {
     display: block;
 }
@@ -118,8 +120,11 @@ body {
     font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 }
 h1 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: bold;
+}
+h2 {
+    font-size: 1.4rem;
 }
 a {
     color: black;
@@ -189,6 +194,9 @@ p {
 #mobile-mobile {
     display: none;
 }
+.loc-narrow {
+    display: none;
+}
 @media(max-width: 800px){
     .navbar {
         display: none;
@@ -203,7 +211,6 @@ p {
         font-size: 3.5vh;
         border-top: 3px solid darkgrey;
         border-bottom: 1px solid lightgrey;
-        width: 100%;
         padding: 0.5vh;
         display: flex;
         justify-content: space-around;
@@ -219,24 +226,60 @@ p {
         display: none;
     }
     .author-avatar-narrow {
-        margin-left: -2%;
         display: flex;
         border-radius: 50%;
+        width: 10%;
+        height: 10%;
     }
     #mobile-mobile {
         display: block;
         color: grey;
     }
     .page-wrapper {
-        margin-left: 22%;
-        margin-right: 10%;
+        margin-left: 0;
+        margin-right: 0;
         margin-top: 5%;
         margin-bottom: 15%;
     }
     .main-paragraph {
+        padding-left: 3%;
+        padding-right: 3%;
         font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
     }
     .main-text {
         padding: 0%;
     }
+    .loc-narrow {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* button */
+.button-frame {
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    cursor: pointer;
 }

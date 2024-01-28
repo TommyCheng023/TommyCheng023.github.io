@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="content.css" />
-        <title>Xinyang Cheng's Profile</title>
+        <title>About - Xinyang Cheng</title>
         <meta property="og:locale" content="en-US">
         <meta property="og:site-name" content="Xinyang Cheng">
         <meta property="og:title" content="About">
@@ -14,13 +14,13 @@
         <script>
             var isClicked = false;
             function changeText() {
-              var btn = document.getElementById('weixin');
+              var btn = document.getElementById('loc');
               if(!isClicked){
-                btn.textContent = 'CapricornTC'; 
+                btn.textContent = 'Shanghai, CN'; 
                 isClicked = true;
               }
               else {
-                btn.textContent = 'WeChat ID'
+                btn.textContent = 'Boston, US';
                 isClicked = false;
               }
             }
@@ -39,7 +39,7 @@
         <div class="page-wrapper">
             <div class="sidebar">
                 <div class="author_avatar">
-                    <img src="https://media.licdn.com/dms/image/D4E03AQGkEI9wv19w3Q/profile-displayphoto-shrink_400_400/0/1686149013444?e=1711584000&v=beta&t=eelMU_gatXHrsnLDCNLJhEveY-fO31Hdu3dt6V0HUq4" class="author_avatar" alt="Xinyang Cheng">
+                    <img src="images/my_photo.jpg" class="author_avatar" alt="Xinyang Cheng">
                 </div>
                 <div class="author_name">
                     Xinyang Cheng
@@ -47,7 +47,7 @@
                 <div class="contact-list">
                     <div class="contact">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>Boston, MA</span>
+                        <span id="loc" onclick="changeText()">Boston, US</span>
                     </div>
                     <a href="mailto:xycheng@bu.edu" class="contact" id="email">
                         <i class="fa fa-envelope"></i>
@@ -72,30 +72,78 @@
                 </div>
             </div>
             <div class="main-paragraph">
-                <img src="https://media.licdn.com/dms/image/D4E03AQGkEI9wv19w3Q/profile-displayphoto-shrink_400_400/0/1686149013444?e=1711584000&v=beta&t=eelMU_gatXHrsnLDCNLJhEveY-fO31Hdu3dt6V0HUq4" class="author-avatar-narrow" alt="Xinyang Cheng">
                 <h1>About</h1>
+                <div style="display: flex; flex-direction: row;">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQGkEI9wv19w3Q/profile-displayphoto-shrink_800_800/0/1686149013444?e=1712188800&v=beta&t=4Q_iPt1Zu845wKunR1w5sQIWJ5QECpgYtxErWIenU3Q" class="author-avatar-narrow" alt="Xinyang Cheng">
+                    <div class="loc-narrow" style="margin-left: 11.5px; align-items: center; font-size: 0.8rem; color: grey;"><i class="fa-solid fa-location-dot"></i>&nbsp Boston, MA, US (current); Shanghai, CN</div>
+                </div>
                 <p>
                     He is an undergraduate pursuing Computer Science and Applied Mathematics double degree at <a href="https://www.bu.edu/" id="inline-hyperlink">Boston University</a>.
                     His development interests mainly span the field of software engineering, including front-end development and back-end development.
                     His research interests span the fields of AI, including data analysis, computer vision, and reinforcement learning.
                 </p>
+
+                <div class="button-frame">
+                    <a href="static/Resume_FebVersion.pdf" download="Xinyang_Cheng_Resume_2024_1.pdf">
+                        <button id="mr.button"><i class="fa-solid fa-download"></i>&nbsp download resume</button>
+                    </a>
+                </div>
+
                 <div class="grey-line"></div>
-                <h1>Project</h1>
+                <h1>Projects</h1>
+                <h2>2023</h2>
                 <h2>BUCSSA Official Website</h2>
-                <a style="font-size: 1.2rem" href="https://www.bucssa.org/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp visit website</a>
+                <a style="font-size: 1rem" href="https://www.bucssa.org/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp visit website</a>
                 <p>
                     Framework: React.js<br />
-                    Developer Team: BU Chinese Student & Scholar Association Tech Department 2023<br />
-                    Main Contributors: Haotian Wu,  <b>Xinyang Cheng</b>, Jiayang Kuang, Yu Han, Sitong Liu
+                    Developer Team: BU Chinese Students & Scholars Association Tech Department 2023<br />
+                    Main Contributors: Haotian Wu,  <b>Xinyang Cheng</b>, Jiayang Kuang, Yu Han, Mingyuan Sun...
                 </p>
                 <h2>BUCSSA Application Portal</h2>
-                <a style="font-size: 1.2rem" href="https://application-portal.bucssa.org/zhaoxin" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp visit website</a>
+                <a style="font-size: 1rem" href="https://application-portal.bucssa.org/zhaoxin" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>&nbsp visit website</a>
                 <p>
                     Framework: Flask <br />
-                    Developer Team: BU Chinese Student & Scholar Association Tech Department 2023<br />
-                    Main Contributors: Haotian Wu, Jiayang Kuang, <b>Xinyang Cheng</b>, Mingyuan Sun, Yifan Zhu, Yu Han
+                    Developer Team: BU Chinese Students & Scholars Association Tech Department 2023<br />
+                    Main Contributors: Haotian Wu, Jiayang Kuang, <b>Xinyang Cheng</b>, Mingyuan Sun, Yu Han, Yifan Zhu
+                </p>
+                <h2>Descriptive Analysis of Screen Time Usage Across Colleges and Majors</h2>
+                <a style="font-size: 1rem" href="static/Final_Report_Protected.pdf" download="Final_Report_Protected.pdf"><i class="fa-solid fa-download"></i>&nbsp download report (private)</a>
+                <p>
+                    Organization: Boston University<br />
+                    Contributors: Oluwaseun Ademiloye, <b>Xinyang Cheng</b>, Sara Fagan, Daschel Koh
+                </p>
+                <h2>C Calculator Reinforcement & Assembly Calculator Reinforcement</h2>
+                <p>
+                    Organization: Boston University<br />
+                    Language Used: C, x86-64 Assembly <br />
+                    Contributor: <b>Xinyang Cheng</b>
+                </p>
+                <h2>Chained Hash Table & Advanced Array Manipulation</h2>
+                <p>
+                    Organization: Boston University<br />
+                    Language Used: Java<br />
+                    Contributor: <b>Xinyang Cheng</b>
+                </p>
+                <div style="height: 10px"></div>
+                <h2>2022</h2>
+                <h2>TextModel Class for Text Analysis and File Operations</h2>
+                <p>
+                    Organization: Boston University<br />
+                    Language Used: Python<br />
+                    Contributor: <b>Xinyang Cheng</b>
+                </p>
+                <div style="height: 10px"></div>
+                <h2>2021</h2>
+                <h2>Lab Experiment: Ligand Production</h2>
+                <p>
+                    Organization: Shanghai University<br />
+                    Contributor: <b>Xinyang Cheng</b>
                 </p>
             </div>
         </div>
+        <footer>
+            <p>© 2024 Personal Website. Built by Xinyang Cheng.</p>
+            <!-- You can add more content here such as links, images, or additional text -->
+        </footer>
     </body>
 </html>

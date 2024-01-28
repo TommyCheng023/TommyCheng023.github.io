@@ -3,6 +3,7 @@ body {
     margin-top: 1.5%;
     margin-left: 0;
     margin-bottom: 0;
+    font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 }
 /* Navbar - Unused */
 .navbar {
@@ -85,12 +86,9 @@ body {
 #weixin {
     display: block;
 }
-#weixin:hover {
+#wecom:hover {
     color: #7bb32e;
     cursor: pointer;
-}
-#weixin-click {
-    display: none;
 }
 #ins:hover {
     color: #e4405f;
@@ -103,6 +101,9 @@ body {
 }
 #LinkedIn:hover {
     color: #0077b5;
+}
+#weixin:hover {
+    color: #7bb32e;
 }
 
 .fa-envelope { color: #000000; }

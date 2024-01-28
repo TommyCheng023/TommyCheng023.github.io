@@ -226,4 +226,9 @@ p {
         display: block;
         color: grey;
     }
+    .main-paragraph {
+        padding-left: 16%;
+        padding-right: 16%;
+        font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    }
 }

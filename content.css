@@ -186,6 +186,9 @@ p {
 .author-avatar-narrow {
     display: none;
 }
+#mobile-mobile {
+    display: none;
+}
 @media(max-width: 800px){
     .navbar {
         display: none;
@@ -218,5 +221,9 @@ p {
     .author-avatar-narrow {
         display: flex;
         border-radius: 50%;
+    }
+    #mobile-mobile {
+        display: block;
+        color: grey;
     }
 }

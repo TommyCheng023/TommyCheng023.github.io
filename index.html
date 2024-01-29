@@ -27,7 +27,11 @@
         </script>
     </head>
     <body>
-        <div class="navbar"  style="padding-left: 10%"><div class="navbar-item">Xinyang Cheng</div></div>
+        <div class="navbar">
+            <div class="navbar-item" style="padding-left: 10%">Xinyang Cheng</div>
+            <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section1">About</a></div>
+            <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section2">Projects</a></div>
+        </div>
         <div class="navbar-narrow">
             <div class="navbar-item">Xinyang Cheng</div>
             <div class="navbar-item"><a href="mailto:xycheng@bu.edu"><i class="fa fa-envelope" id="email"></i></a></div>
@@ -72,24 +76,26 @@
                 </div>
             </div>
             <div class="main-paragraph">
-                <h1>About</h1>
-                <div style="display: flex; flex-direction: row;">
-                    <img src="https://media.licdn.com/dms/image/D4E03AQGkEI9wv19w3Q/profile-displayphoto-shrink_800_800/0/1686149013444?e=1712188800&v=beta&t=4Q_iPt1Zu845wKunR1w5sQIWJ5QECpgYtxErWIenU3Q" class="author-avatar-narrow" alt="Xinyang Cheng">
-                    <div class="loc-narrow" style="margin-left: 11.5px; align-items: center; font-size: 0.8rem; color: grey;"><i class="fa-solid fa-location-dot"></i>&nbsp Boston, MA, US (current); Shanghai, CN</div>
-                </div>
-                <p>
-                    He is an undergraduate pursuing Computer Science and Applied Mathematics double degrees at <a href="https://www.bu.edu/" id="inline-hyperlink">Boston University</a>.
-                    His development interests span the fields of software engineering, including front-end development and back-end development.
-                    His research interests span the fields of AI, including data analysis, computer vision, and reinforcement learning.
-                </p>
+                <div id="section1">
+                    <h1>About</h1>
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="https://media.licdn.com/dms/image/D4E03AQGkEI9wv19w3Q/profile-displayphoto-shrink_800_800/0/1686149013444?e=1712188800&v=beta&t=4Q_iPt1Zu845wKunR1w5sQIWJ5QECpgYtxErWIenU3Q" class="author-avatar-narrow" alt="Xinyang Cheng">
+                        <div class="loc-narrow" style="margin-left: 11.5px; align-items: center; font-size: 0.8rem; color: grey;"><i class="fa-solid fa-location-dot"></i>&nbsp Boston, MA, US (current); Shanghai, CN</div>
+                    </div>
+                    <p>
+                        He is an undergraduate pursuing Computer Science and Applied Mathematics double degrees at <a href="https://www.bu.edu/" id="inline-hyperlink">Boston University</a>.
+                        His development interests span the fields of software engineering, including front-end development and back-end development.
+                        His research interests span the fields of AI, including data analysis, computer vision, and reinforcement learning.
+                    </p>
 
-                <div class="button-frame">
-                    <a href="static/Resume_FebVersion.pdf" download="Xinyang_Cheng_Resume_2024_1.pdf">
-                        <button id="mr.button"><i class="fa-solid fa-download"></i>&nbsp download resume</button>
-                    </a>
+                    <div class="button-frame">
+                        <a href="static/Resume_FebVersion.pdf" download="Xinyang_Cheng_Resume_2024_1.pdf">
+                            <button id="mr.button"><i class="fa-solid fa-download"></i>&nbsp download resume</button>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="grey-line"></div>
+                <div class="grey-line" id="section2"></div>
                 <h1>Projects</h1>
                 <h2>2023</h2>
                 <h2>BUCSSA Official Website</h2>
@@ -148,7 +154,8 @@
             </div>
         </div>
         <footer>
-            <p>© 2024 Personal Website. Built by Xinyang Cheng.</p>
+            <p>© 2024 Personal Website.</p>
+            <p>Built by Xinyang Cheng.</p>
         </footer>
     </body>
 </html>

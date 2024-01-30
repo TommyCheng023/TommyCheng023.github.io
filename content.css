@@ -12,6 +12,7 @@ body {
 .navbar {
     position: sticky;
     top: -1px;
+    z-index: 3;
     border-top: 3px solid darkgrey;
     border-bottom: 1px solid lightgrey;
     background-color: white;
@@ -52,7 +53,8 @@ body {
     height: auto;
     width: auto;
     position: sticky;
-    top: 200px;
+    top: 10%;
+    z-index: 2;
 }
 
 .author_avatar {

@@ -3,7 +3,7 @@ html {
 }
 body {
     margin-right: 0;
-    margin-top: 1.5%;
+    margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
     font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
@@ -53,7 +53,7 @@ body {
     height: auto;
     width: auto;
     position: sticky;
-    top: 10%;
+    top: 20%;
     z-index: 2;
 }
 
@@ -110,6 +110,9 @@ body {
 #LinkedIn:hover {
     color: #0077b5;
 }
+#discord:hover {
+    color: #7289da;
+}
 #weixin:hover {
     color: #7bb32e;
 }
@@ -119,6 +122,7 @@ body {
 .fa-github { color: #333; }
 .fa-instagram { color: #e4405f; }
 .fa-weixin { color: #7bb32e; }
+.fa-discord { color: #7289da; }
 
 .main-paragraph {
     padding-left: 6%;
@@ -147,7 +151,7 @@ a {
 a:hover {
     color: lightskyblue;
 }
-p {
+p, li {
     font-size: 1.2rem;
     line-height: 150%;
 }

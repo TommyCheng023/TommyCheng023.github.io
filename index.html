@@ -24,13 +24,32 @@
                 isClicked = false;
               }
             }
+
+            window.onscroll = function() {
+                // Get the total page height
+                var pageHeight = document.documentElement.scrollHeight;
+                // Get current scroll position
+                var scrollPosition = window.innerHeight + window.pageYOffset;
+
+                // Check if we've scrolled to the bottom
+                if (scrollPosition >= pageHeight) {
+                    // Apply the extra CSS class
+                    document.body.classList.remove('sidebar-block');
+                } else {
+                    // Remove the class if not at the bottom
+                    document.body.classList.add('sidebar-block');
+                }
+            };
+
         </script>
     </head>
     <body>
         <div class="navbar">
-            <div class="navbar-item" style="padding-left: 10%">Xinyang Cheng</div>
+            <div class="navbar-item" style="padding-left: 10%; font-size: 3vh;">Xinyang Cheng</div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section1">About</a></div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section2">Projects</a></div>
+            <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section3">Teaching</a></div>
+            <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section4">Advising</a></div>
         </div>
         <div class="navbar-narrow">
             <div class="navbar-item">Xinyang Cheng</div>
@@ -38,43 +57,47 @@
             <div class="navbar-item"><a href="https://www.linkedin.com/in/xinyang-cheng-325825260" target="_blank"><i class="fa-brands fa-linkedin icon-narrow" id="LinkedIn"></i></a></div>
             <div class="navbar-item"><a href="https://github.com/TommyCheng023" target="_blank"><i class="fa-brands fa-github icon-narrow" id="github"></i></a></div>
             <div class="navbar-item"><a href="https://www.instagram.com/tommyyyy985/" target="_blank"><i class="fa-brands fa-instagram icon-narrow" id="ins"></i></a></div>
-            <div class="navbar-item"><a href="wecom_connection.html" target="_blank"><i class="fa-brands fa-weixin icon-narrow" id="weixin"></i></a></div>
+            <div class="navbar-item"><a href="https://discordapp.com/users/Tommy_C#9342" target="_blank"><i class="fa-brands fa-discord icon-narrow" id="discord"></i></a></div>
         </div>
         <div class="page-wrapper">
             <div class="sidebar">
                 <div class="sidebar-block">
-                <div class="author_avatar">
-                    <img src="images/my_photo.jpg" class="author_avatar" alt="Xinyang Cheng">
-                </div>
-                <div class="author_name">
-                    Xinyang Cheng
-                </div>
-                <div class="contact-list">
-                    <div class="contact">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span id="loc" onclick="changeText()">Boston, US</span>
+                    <div class="author_avatar">
+                        <img src="images/my_photo.jpg" class="author_avatar" alt="Xinyang Cheng">
                     </div>
-                    <a href="mailto:xycheng@bu.edu" class="contact" id="email">
-                        <i class="fa fa-envelope"></i>
-                        <span>Email</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/xinyang-cheng-325825260" target="_blank" class="contact" id="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/TommyCheng023" target="_blank" class="contact" id="github">
-                        <i class="fa-brands fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.instagram.com/tommyyyy985/" target="_blank" class="contact"  id="ins">
-                        <i class="fa-brands fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="wecom_connection.html" target="_blank" class="contact"  id="wecom">
-                        <i class="fa-brands fa-weixin icon-narrow" id="weixin"></i>
-                        <span>WeChat</span>
-                    </a>
-                </div>
+                    <div class="author_name">
+                        Xinyang Cheng
+                    </div>
+                    <div class="contact-list">
+                        <div class="contact">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span id="loc" onclick="changeText()">Boston, US</span>
+                        </div>
+                        <a href="mailto:xycheng@bu.edu" class="contact" id="email">
+                            <i class="fa fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/xinyang-cheng-325825260" target="_blank" class="contact" id="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/TommyCheng023" target="_blank" class="contact" id="github">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/tommyyyy985/" target="_blank" class="contact"  id="ins">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://discordapp.com/users/Tommy_C#9342" target="_blank" class="contact"  id="discord">
+                            <i class="fa-brands fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+                        <a href="wecom_connection.html" target="_blank" class="contact"  id="wecom">
+                            <i class="fa-brands fa-weixin icon-narrow" id="weixin"></i>
+                            <span>WeChat</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="main-paragraph">
@@ -153,11 +176,22 @@
                     Organization: Shanghai University<br />
                     Contributor: <b>Xinyang Cheng</b>
                 </p>
+                <div class="grey-line" id="section3"></div>
+                <h1>Teaching</h1>
+                <ul>
+                    <li><b>[2023 Summer]</b> Teaching Assistant, GEC Academy, "Deep Reinforcement Learning"</li>
+                </ul>
+                <div class="grey-line" id="section4"></div>
+                <h1>Student Advising</h1>
+                <ul>
+                    <li><b>[2024 Spring]</b> High School Interview Advisor, Zhenghan Sun</li>
+                    <li><b>[2023 Fall]</b> High School Interview Advisor, Qimiao Zou</li>
+                </ul>
             </div>
         </div>
         <footer>
             <p>© 2024 Personal Website.</p>
-            <p>Built by Xinyang Cheng.</p>
+            <p>Built by Xinyang Cheng. Hosted by Github Pages.</p>
         </footer>
     </body>
 </html>

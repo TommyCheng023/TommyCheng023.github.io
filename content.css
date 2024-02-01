@@ -34,7 +34,6 @@ body {
     transform: scale(1.05);
     color: black;
 }
-
 /* Main Page */
 .page-wrapper {
     margin-left: 10%;
@@ -208,6 +207,17 @@ p, li {
 .loc-narrow {
     display: none;
 }
+/* Visitor Statistics */
+.map-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.visitor-map {
+    margin-top: 5%;
+    width: 20vw;
+}
 @media(max-width: 800px){
     .navbar {
         display: none;
@@ -266,6 +276,9 @@ p, li {
     .loc-narrow {
         display: flex;
     }
+    .map-block {
+        display: none;
+    }
 }
 
 
@@ -296,16 +309,4 @@ footer {
 }
 button {
     cursor: pointer;
-}
-
-/* Visitor Statistics */
-.map-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.visitor-map {
-    margin-top: 5%;
-    width: 20vw;
 }

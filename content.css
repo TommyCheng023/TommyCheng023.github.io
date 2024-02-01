@@ -297,3 +297,15 @@ footer {
 button {
     cursor: pointer;
 }
+
+/* Visitor Statistics */
+.map-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.visitor-map {
+    margin-top: 5%;
+    width: 20vw;
+}

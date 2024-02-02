@@ -207,17 +207,12 @@ p, li {
 .loc-narrow {
     display: none;
 }
-/* Visitor Statistics */
-.map-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* Map-Widget */
+#maps-container {
+    width: 500px; 
+    height: 300px; 
 }
-.visitor-map {
-    margin-top: 5%;
-    width: 20vw;
-}
+
 @media(max-width: 800px){
     .navbar {
         display: none;
@@ -276,7 +271,7 @@ p, li {
     .loc-narrow {
         display: flex;
     }
-    .map-block {
+    .maps-container {
         display: none;
     }
 }

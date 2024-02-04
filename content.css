@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5vh;
 }
 body {
     margin-right: 0;
@@ -116,6 +117,7 @@ body {
     color: #7bb32e;
 }
 
+/* icon color */
 .fa-envelope { color: #000000; }
 .fa-linkedin { color: #0077b5; }
 .fa-github { color: #333; }
@@ -123,6 +125,7 @@ body {
 .fa-weixin { color: #7bb32e; }
 .fa-discord { color: #7289da; }
 
+/* main text */
 .main-paragraph {
     padding-left: 6%;
     padding-right: 16%;
@@ -164,6 +167,7 @@ p, li {
     display: none;
 }
 
+/* animations */
 @keyframes slideInFromBottom {
     0% {
       opacity: 0;
@@ -198,6 +202,8 @@ p, li {
         display: block;
     }
 }
+
+/* mobile template */
 .author-avatar-narrow {
     display: none;
 }
@@ -213,6 +219,7 @@ p, li {
     height: 300px; 
 }
 
+/* mobile responsive */
 @media(max-width: 800px){
     .navbar {
         display: none;
@@ -276,11 +283,6 @@ p, li {
     }
 }
 
-
-
-
-
-
 /* footer */
 footer {
     background-color: #333;
@@ -295,7 +297,7 @@ footer {
 /* button */
 .button-frame {
     width: 100%;
-    margin-top: 5vh;
+    margin-top: 3vh;
     margin-bottom: 2vh;
     flex-direction: row;
     display: flex;

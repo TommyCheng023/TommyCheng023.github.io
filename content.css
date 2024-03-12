@@ -28,12 +28,16 @@ body {
 }
 .navbar-item {
     color: grey;
-    transition: all 0.5s ease;
     padding-right: 5%;
 }
 .navbar-item:hover {
-    transform: scale(1.05);
     color: black;
+}
+.anim-text {
+    transition: all 0.5s ease;
+}
+.anim-text:hover {
+    transform: scale(1.05);
 }
 /* Main Page */
 .page-wrapper {
@@ -148,10 +152,10 @@ a {
     text-decoration: underline;
 }
 #inline-hyperlink:hover {
-    color: lightskyblue;  /* default link color usage */
+    color: rgb(0, 78, 138); 
 }
 a:hover {
-    color: lightskyblue;
+    color: lightskyblue;    /* default link color usage */
 }
 p, li {
     font-size: 1.2rem;

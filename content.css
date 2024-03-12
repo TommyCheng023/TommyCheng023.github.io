@@ -202,6 +202,33 @@ p, li {
         display: block;
     }
 }
+/* tech stack display */
+.stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.make-hex {
+    width: 100px;
+    height: 115.47px; /* approximated calculation */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(150deg, black, grey, lightgrey);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 5px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    transition: transform 0.3s ease-in-out;
+}
+.make-hex:hover {
+    transform: scale(1.1);
+}
+.make-hex img {
+    align-self: center;
+    width: 70%;
+}
 
 /* mobile template */
 .author-avatar-narrow {

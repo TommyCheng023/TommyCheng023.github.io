@@ -5,7 +5,8 @@ Feel free to check out my personal website! :D
 link: https://xinyang-cheng.com/
 
 # Brief Walkthrough (Web Users)
-This is an interactive and mobile responsive personal website. 
+- This is an interactive and mobile responsive personal website. 
+- **NEW FEATURE!!** The webpage will be displayed in a custom dark mode from 19:00 to 6:00.
 
 Except for [BUCSSA](https://www.bucssa.org/), all mentioned industries or organizations are linked to their official websites.
 ## Left Menu
@@ -45,8 +46,7 @@ It is now the main section of the webpage.
 # Future Expectations
 ## apply framework
 - I'm considering using `Angular` or `React` to my personal website.
-## New Features
-- add `day/night` reading mode
+
 ## New Sections
 - `Publications`: wait until my first essay is published 😂
 - `Research`: for the purpose of recording R&D experiences, this section is necessary to be independent from `Projects`

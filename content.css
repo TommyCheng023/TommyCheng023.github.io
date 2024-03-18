@@ -23,6 +23,9 @@ body {
     --icon-github: #fff;
     --icon-dot: #fff;
     background-color: var(--bg-color);
+
+    /* mobile version only */
+    --loc-narrow: rgb(255, 255, 255);
 }
 
 body[data-theme='light_theme'] {
@@ -41,6 +44,9 @@ body[data-theme='light_theme'] {
     --icon-github: #333;
     --icon-dot: #000000;
     background-color: var(--bg-color);
+
+    /* mobile version only */
+    --loc-narrow: rgb(128, 128, 128);
 }
 
 /* Navbar */
@@ -308,6 +314,9 @@ p, li {
     .navbar {
         display: none;
     }
+    #small-name {
+        color: var(--text-color);
+    }
     .icon-narrow {
         color: var(--text-color);
     }
@@ -361,6 +370,7 @@ p, li {
     }
     .loc-narrow {
         display: flex;
+        color: var(--loc-narrow);
     }
     .hide-for-mobile {
         display: none;

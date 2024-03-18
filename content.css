@@ -8,7 +8,41 @@ body {
     margin-left: 0;
     margin-bottom: 0;
     font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --Xinyang-Cheng: #ffffff;
+    --default-hover-color: rgb(135,206,250);
+    --inline-hover-color: rgb(0, 157, 255);
+    --link: rgb(166, 70, 255);
+    --avatar-border: #161616;
+    --badge-color-1: rgb(255, 255, 255);
+    --badge-color-2: rgb(211, 211, 211);
+    --badge-color-3: rgb(128, 128, 128);
+    --divisor: rgb(181, 181, 181);
+    --icon-envelope: #fff;
+    --icon-github: #fff;
+    --icon-dot: #fff;
+    background-color: var(--bg-color);
 }
+
+body[data-theme='light_theme'] {
+    --bg-color: #fff;
+    --text-color: #000000;
+    --Xinyang-Cheng: #000000;
+    --default-hover-color: rgb(135,206,250);
+    --inline-hover-color: rgb(0, 78, 138);
+    --link: rgb(0, 0, 255);
+    --avatar-border: #f2f3f3;
+    --badge-color-1: rgb(0, 0, 0);
+    --badge-color-2: rgb(128, 128, 128);
+    --badge-color-3: rgb(211, 211, 211);
+    --divisor: rgb(181, 181, 181);
+    --icon-envelope: #000000;
+    --icon-github: #333;
+    --icon-dot: #000000;
+    background-color: var(--bg-color);
+}
+
 /* Navbar */
 .navbar {
     position: sticky;
@@ -16,7 +50,7 @@ body {
     z-index: 3;
     border-top: 3px solid darkgrey;
     border-bottom: 1px solid lightgrey;
-    background-color: white;
+    background-color: var(--bg-color);
     padding: 1.5vh;
     font-size: 5vh;
     display: flex;
@@ -27,17 +61,22 @@ body {
     display: none;
 }
 .navbar-item {
-    color: grey;
     padding-right: 5%;
-}
-.navbar-item:hover {
-    color: black;
 }
 .anim-text {
     transition: all 0.5s ease;
+    color: var(--text-color);
 }
 .anim-text:hover {
     transform: scale(1.05);
+}
+.anim-text-2 {
+    transition: all 0.5s ease;
+    color: grey;
+}
+.anim-text-2:hover {
+    transform: scale(1.05);
+    color: var(--Xinyang-Cheng)
 }
 /* Main Page */
 .page-wrapper {
@@ -64,12 +103,13 @@ body {
 .author_avatar {
     border-radius: 50%;
     padding: 1px;
-    border: 1px solid #f2f3f3;
+    border: 1px solid var(--avatar-border);
     max-width: 175px;
 }
 .author_name {
     font-weight: bold;
     font-size: 1.5rem;
+    color: var(--text-color);
     margin-top: 5%;
 }
 
@@ -91,8 +131,10 @@ body {
     width: 30px;
     text-align: center;
 }
+#loc {
+    color: var(--icon-dot);
+}
 #loc:hover {
-    color: rgb(33, 33, 33);
     cursor: pointer;
 }
 #weixin {
@@ -122,9 +164,10 @@ body {
 }
 
 /* icon color */
-.fa-envelope { color: #000000; }
+.fa-location-dot { color: var(--icon-dot); }
+.fa-envelope { color: var(--icon-envelope); }
 .fa-linkedin { color: #0077b5; }
-.fa-github { color: #333; }
+.fa-github { color: var(--icon-github); }
 .fa-instagram { color: #e4405f; }
 .fa-weixin { color: #7bb32e; }
 .fa-discord { color: #7289da; }
@@ -138,33 +181,39 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: bold;
+    color: var(--text-color);
 }
 h2 {
     font-size: 1.4rem;
+    color: var(--text-color);
 }
 a {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
     transition: all 0.2s ease;
 }
 #inline-hyperlink {
-    color: blue;
+    color: var(--link);
     text-decoration: underline;
 }
 #inline-hyperlink:hover {
-    color: rgb(0, 78, 138); 
+    color: var(--inline-hover-color); 
 }
 a:hover {
-    color: lightskyblue;    /* default link color usage */
+    color: var(--default-hover-color);    /* default link color usage */
 }
 p, li {
     font-size: 1.2rem;
     line-height: 150%;
+    color: var(--text-color);
 }
 .grey-line {
     height: 1px;
     width: 100%;
-    background-color: rgb(181, 181, 181);
+    background-color: var(--divisor);
+}
+#first-line {
+    background-color: var(--bg-color);
 }
 
 .navbar-link-narrow {
@@ -219,7 +268,7 @@ p, li {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(150deg, black, grey, lightgrey);
+    background: linear-gradient(150deg, var(--badge-color-1), var(--badge-color-2), var(--badge-color-3));
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     margin: 5px;
     margin-left: 1.5vw;
@@ -260,7 +309,7 @@ p, li {
         display: none;
     }
     .icon-narrow {
-        color: black;
+        color: var(--text-color);
     }
     .navbar-narrow {
         display: flex;
@@ -341,4 +390,8 @@ footer {
 }
 button {
     cursor: pointer;
+}
+/* footer's independent color */
+#footer-text {
+    color: white;
 }

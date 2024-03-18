@@ -27,10 +27,11 @@
               }
             };
         </script>
+        <script src="day_night_logic.js"></script>
     </head>
-    <body>
+    <body data-theme='light_theme'>
         <div class="navbar">
-            <div class="navbar-item anim-text" style="padding-left: 10%; font-size: 3vh;">Xinyang Cheng</div>
+            <div class="navbar-item anim-text-2" style="padding-left: 10%; font-size: 3vh;">Xinyang Cheng</div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section1" class="anim-text">About</a></div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section2" class="anim-text">Projects</a></div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section3" class="anim-text">Teaching</a></div>
@@ -86,7 +87,7 @@
                 </div>
             </div>
             <div class="main-paragraph">
-                <div class="grey-line" style="background-color: white" id="section1"></div>
+                <div class="grey-line" id="first-line" id="section1"></div>
                 <h1>About</h1>
                 <div style="display: flex; flex-direction: row;">
                     <img src="https://media.licdn.com/dms/image/D4E03AQGkEI9wv19w3Q/profile-displayphoto-shrink_800_800/0/1686149013444?e=1712188800&v=beta&t=4Q_iPt1Zu845wKunR1w5sQIWJ5QECpgYtxErWIenU3Q" class="author-avatar-narrow" alt="Xinyang Cheng">
@@ -216,8 +217,8 @@
             </div>
         </div>
         <footer>
-            <p>© 2024 Personal Website.</p>
-            <p>Developed by Xinyang Cheng. Powered by GitHub Pages.</p>
+            <p id="footer-text">© 2024 Personal Website.</p>
+            <p id="footer-text">Developed by Xinyang Cheng. Powered by GitHub Pages.</p>
         </footer>
     </body>
 </html>

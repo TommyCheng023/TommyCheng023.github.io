@@ -20,7 +20,7 @@ The main content is divided into four sections: `About`, `Projects`, `Teaching` 
   - There's no detailed introduction displayed, only `contributor(s)`, as well as optional information: `framework&language`, `organization`, `company`.
 - `Teaching`: This section contains all experiences I had in the past at specific education industries.
 - `Advising`: This section displays students I've advised, mainly on high school and university applications. If possible, their offers may be updated in the website!
-
+- `MapMyVisitors`: I added an external source from [MapMyVisitors](https://mapmyvisitors.com/) to check my web visitors, which will be displayed at the bottom of the page. 
 ## Navbar
 **You can go to each section without scrolling yourself by clicking on the contents of the navbar.**
 
@@ -33,6 +33,7 @@ You can return to the main page by clicking on `Xinyang Cheng` in the navbar
 ## Navbar
 - My contacts are moved to the navbar with icons displayed only. Clicking on the icons will send you to my profiles.
 - WeCom page is inaccessible in mobile template.
+- The map widget is removed in mobile template.
 
 
 ## Left Menu

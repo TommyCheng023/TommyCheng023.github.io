@@ -245,9 +245,13 @@ p, li {
     display: none;
 }
 /* Map-Widget */
-#maps-container {
+.hide-for-mobile {
+    margin-left: 3%;
+    margin-top: 11%;
     width: 500px; 
-    height: 300px; 
+}
+.hide-for-mobile script {
+    object-fit: contain;
 }
 
 /* mobile responsive */
@@ -309,7 +313,7 @@ p, li {
     .loc-narrow {
         display: flex;
     }
-    .maps-container {
+    .hide-for-mobile {
         display: none;
     }
 }

@@ -6,7 +6,7 @@ link: https://xinyang-cheng.com/
 
 # Brief Walkthrough (Web Users)
 - This is an interactive and mobile responsive personal website. 
-- **NEW FEATURE!!** The webpage will be displayed in a custom dark mode from 19:00 to 6:00.
+- **NEW FEATURE!!** The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone.
 
 Except for [BUCSSA](https://www.bucssa.org/), all mentioned industries or organizations are linked to their official websites.
 ## Left Menu
@@ -31,6 +31,8 @@ When clicking on `WeChat`, you'll enter another page displaying the QR Code of m
 You can return to the main page by clicking on `Xinyang Cheng` in the navbar
 
 # Brief Walkthrough (Mobile Users)
+- **NEW FEATURE!!** The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone.
+
 ## Navbar
 - My contacts are moved to the navbar with icons displayed only. Clicking on the icons will send you to my profiles.
 - WeCom page is inaccessible in mobile template.

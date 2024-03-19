@@ -98,6 +98,8 @@ body[data-theme='light_theme'] {
     animation: slideInFromBottom 0.5s ease-out;
     font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 }
+
+/* Side Menu */
 .sidebar-block {
     height: auto;
     width: auto;
@@ -213,12 +215,14 @@ p, li {
     line-height: 150%;
     color: var(--text-color);
 }
+
+/* lines for division and responding navbar */
 .grey-line {
     height: 1px;
     width: 100%;
     background-color: var(--divisor);
 }
-.first-line {
+.hidden-line {
     height: 1px;
     width: 100%;
     background-color: var(--bg-color);
@@ -263,6 +267,7 @@ p, li {
         display: block;
     }
 }
+
 /* tech stack display */
 .stack-container {
     display: flex;
@@ -301,6 +306,7 @@ p, li {
 .loc-narrow {
     display: none;
 }
+
 /* Map-Widget */
 .hide-for-mobile {
     margin-left: 3%;

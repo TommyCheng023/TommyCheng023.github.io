@@ -1,6 +1,5 @@
 function setThemePreference() {
     /* This function holds the light/dark theme of the website based on the current hour [Eastern Daylight Time Zone]. */
-
     var d = new Date();
     var currentHour = d.getHours();  
   

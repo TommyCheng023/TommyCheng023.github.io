@@ -13,32 +13,20 @@
         <!-- icon -->
         <script src="https://kit.fontawesome.com/30316820a7.js" crossorigin="anonymous"></script>
         <!-- custom features -->
-        <script>
-            var isClicked = false;
-            function changeText() {
-              var btn = document.getElementById('loc');
-              if(!isClicked){
-                btn.textContent = 'Shanghai, CN'; 
-                isClicked = true;
-              }
-              else {
-                btn.textContent = 'Boston, US';
-                isClicked = false;
-              }
-            };
-        </script>
-        <script src="day_night_logic.js"></script>
+        <script src="pageLogic/location_change.js"></script>
+        <script src="pageLogic/day_night_logic.js"></script>
+        <script src="pageLogic/refresh_logic.js"></script>
     </head>
     <body data-theme='light_theme'>
         <div class="navbar">
-            <div class="navbar-item anim-text-2" style="padding-left: 10%; font-size: 3vh;">Xinyang Cheng</div>
+            <div class="navbar-item anim-text-2" style="padding-left: 10%; font-size: 3vh;" onclick="pageRefresh()">Xinyang Cheng</div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section1" class="anim-text">About</a></div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section2" class="anim-text">Projects</a></div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section3" class="anim-text">Teaching</a></div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section4" class="anim-text">Advising</a></div>
         </div>
         <div class="navbar-narrow">
-            <div class="navbar-item" id="small-name">Xinyang Cheng</div>
+            <div class="navbar-item" id="small-name" onclick="pageRefresh()">Xinyang Cheng</div>
             <div class="navbar-item"><a href="mailto:xycheng@bu.edu"><i class="fa fa-envelope" id="email"></i></a></div>
             <div class="navbar-item"><a href="https://www.linkedin.com/in/xinyang-cheng-325825260" target="_blank"><i class="fa-brands fa-linkedin icon-narrow" id="LinkedIn"></i></a></div>
             <div class="navbar-item"><a href="https://github.com/TommyCheng023" target="_blank"><i class="fa-brands fa-github icon-narrow" id="github"></i></a></div>
@@ -87,7 +75,7 @@
                 </div>
             </div>
             <div class="main-paragraph">
-                <div class="first-line" id="section1"></div>
+                <div class="hidden-line" id="section1"></div>
                 <h1>About</h1>
                 <div style="display: flex; flex-direction: row;">
                     <img src="https://media.licdn.com/dms/image/D4E03AQGkEI9wv19w3Q/profile-displayphoto-shrink_800_800/0/1686149013444?e=1712188800&v=beta&t=4Q_iPt1Zu845wKunR1w5sQIWJ5QECpgYtxErWIenU3Q" class="author-avatar-narrow" alt="Xinyang Cheng">

@@ -218,7 +218,9 @@ p, li {
     width: 100%;
     background-color: var(--divisor);
 }
-#first-line {
+.first-line {
+    height: 1px;
+    width: 100%;
     background-color: var(--bg-color);
 }
 

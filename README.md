@@ -15,7 +15,8 @@ A menu holding a sticky position displaying my `current location`(click on it wi
 ## Right Division
 The main content is divided into four sections: `About`, `Projects`, `Teaching` and `Advising`.
 
-- `About`: It starts with an introduction in the third-person, followed by displaying all used **programming languages, scripts and frameworks** through out my path of R&D.
+- `About`: It starts with an introduction in the third-person, followed by a button where you can download my resume as `PDF` if you click on it. My resume will be updated once a month.
+  - After that, you can see a subsection called **tech stack** displaying all used **programming languages, scripts and frameworks** through out my path of R&D with their logos showed as badges.
 - `Projects`: This sections contain all landing projects I've done since 2021. Most of the projects contain a link to the source code or the deployed product. I'm trying to make the rest visible as soon as possible.
   - For projects with a report or an essay as the final output, those files are locked with passwords. If you're a recruiter or someone interested in the content, I'm willing to provide the password!
   - There's no detailed introduction displayed, only `contributor(s)`, as well as optional information: `framework&language`, `organization`, `company`.

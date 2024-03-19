@@ -10,6 +10,7 @@ body {
     font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
     --bg-color: #000000;
     --text-color: #ffffff;
+    --p-color: #e1e1e1;
     --Xinyang-Cheng: #ffffff;
     --default-hover-color: rgb(135,206,250);
     --inline-hover-color: rgb(0, 157, 255);
@@ -31,6 +32,7 @@ body {
 body[data-theme='light_theme'] {
     --bg-color: #fff;
     --text-color: #000000;
+    --p-color: #000000;
     --Xinyang-Cheng: #000000;
     --default-hover-color: rgb(135,206,250);
     --inline-hover-color: rgb(0, 78, 138);
@@ -213,7 +215,7 @@ a:hover {
 p, li {
     font-size: 1.2rem;
     line-height: 150%;
-    color: var(--text-color);
+    color: var(--p-color);
 }
 
 /* lines for division and responding navbar */

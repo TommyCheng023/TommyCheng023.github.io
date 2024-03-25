@@ -3,19 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="content.css" />
+        <link rel="stylesheet" href="static/content.css" />
         <title>About - Xinyang Cheng</title>
         <meta name="description" content="Xinyang (Tommy) Cheng's Personal Website">
         <meta name="keywords" content="Xinyang Cheng, Cheng, Xinyang, Tommy, Xinyang (Tommy) Cheng">
         <meta name="author" content="Xinyang (Tommy) Cheng">
         <meta property="og:title" content="About - Xinyang Cheng">
         <meta property="og:description" content="Welcome to Xinyang Cheng's personal website! :D">
+
         <!-- icon -->
         <script src="https://kit.fontawesome.com/30316820a7.js" crossorigin="anonymous"></script>
         <!-- custom features -->
         <script src="pageLogic/location_change.js"></script>
         <script src="pageLogic/day_night_logic.js"></script>
         <script src="pageLogic/refresh_logic.js"></script>
+        <script src="pageLogic/sub_window.js"></script>
     </head>
     <body data-theme='light_theme'>
         <div class="navbar">
@@ -67,10 +69,18 @@
                             <i class="fa-brands fa-discord"></i>
                             <span>Discord</span>
                         </a>
-                        <a href="wecom_connection.html" target="_blank" class="contact"  id="wecom">
+                        <a href="templates/wecom_connection.html" class="contact" id="wecom">
                             <i class="fa-brands fa-weixin icon-narrow" id="weixin"></i>
                             <span>WeChat</span>
                         </a>
+                        <!-- unused code 
+                        <div id="sub-window" class="hidden">
+                            <img src="images/wecom.png" style="height: 5.5%; width: 5.5%; margin-right:8px;" alt="WeCom">
+                            <h3 style="color: #0082ef">WeCom Connection</h3>
+                            <p>In consideration of privacy reasons, I'm going to share my WeCom account instead of personal WeChat account.</p>
+                            <img src="images/wecom_code.jpg" alt="QR Code">
+                        </div>
+                        -->
                     </div>
                 </div>
             </div>
@@ -87,7 +97,7 @@
                     His research interests span the fields of AI, including data analysis, computer vision, and reinforcement learning.
                 </p>
                 <div class="button-frame">
-                    <a href="static/Resume_MarVersion.pdf" download="Xinyang_Cheng_Resume_2024_3.pdf">
+                    <a href="files/Resume_MarVersion.pdf" download="Xinyang_Cheng_Resume_2024_3.pdf">
                         <button id="mr.button"><i class="fa-solid fa-download"></i>&nbsp download resume</button>
                     </a>
                 </div>
@@ -153,7 +163,7 @@
                     Contributors: Haotian Wu, Jiayang Kuang, <b>Xinyang Cheng</b>, Mingyuan Sun, Yu Han, Yifan Zhu
                 </p>
                 <h2>Descriptive Analysis of Screen Time Usage Across Colleges and Majors</h2>
-                <a style="font-size: 1rem" href="static/Final_Report_Protected.pdf" download="Final_Report_Protected.pdf"><i class="fa-solid fa-download"></i>&nbsp download report (private)</a>
+                <a style="font-size: 1rem" href="files/Final_Report_Protected.pdf" download="Final_Report_Protected.pdf"><i class="fa-solid fa-download"></i>&nbsp download report (private)</a>
                 <p>
                     Contributors: Oluwaseun Ademiloye, <b>Xinyang Cheng</b>, Sara Fagan, Daschel Koh
                 </p>

@@ -1,8 +1,9 @@
-
 ## Xinyang(Tommy) Cheng's personal website.
 Feel free to check out my personal website! :D
 
 link: https://xinyang-cheng.com/
+
+<img width="64" alt="cxy" src="https://github.com/TommyCheng023/TommyCheng023.github.io/assets/115842289/650c326f-8dcf-4992-a970-590b6773839d">
 
 # Brief Walkthrough (Web Users)
 - This is an interactive and mobile responsive personal website. 

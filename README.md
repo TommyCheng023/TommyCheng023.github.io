@@ -58,6 +58,7 @@ It is now the main section of the webpage.
 ## Feature Updates
 - Add `Development History` Section showing the update history of the website.
 - Change the `day/night` mode into a client-controllable feature. Remove the auto-change feature based on EST time zone.
+- Connect with some existing repository as my subdomain.
 
 # Appreciation
 Thank you so much for visiting my repository and my personal website!!🙏

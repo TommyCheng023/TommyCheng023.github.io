@@ -17,13 +17,15 @@
         <meta property="og:title" content="About - Xinyang Cheng">
         <meta property="og:description" content="Welcome to Xinyang Cheng's personal website! :D">
         <meta property="og:image" content="https://xinyang-cheng.com/images/my_photo.jpg">
+
         <!-- icon -->
         <script src="https://kit.fontawesome.com/30316820a7.js" crossorigin="anonymous"></script>
         <!-- custom features -->
-        <script src="pageLogic/location_change.js"></script>
-        <script src="pageLogic/day_night_logic.js"></script>
-        <script src="pageLogic/refresh_logic.js"></script>
-        <script src="pageLogic/sub_window.js"></script>
+        <script src="features/location_change.js"></script>
+        <script src="features/day_night_logic.js"></script>
+        <script src="features/refresh_logic.js"></script>
+        <script src="features/sub_window.js"></script>
+        <script src="features/view_animation.js"></script>
     </head>
     <body data-theme='light_theme'>
         <div class="navbar">
@@ -32,6 +34,7 @@
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section2" class="anim-text">Projects</a></div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section3" class="anim-text">Teaching</a></div>
             <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="#section4" class="anim-text">Advising</a></div>
+            <div class="navbar-item" style="font-size: 3vh; position: absolute; right: 0"><button id="theme-button" onclick="buttonThemePreference()"><i class="fa-solid fa-sun" id="toggle-icon"></i></button></div>
         </div>
         <div class="navbar-narrow">
             <div class="navbar-item anim-text-2" onclick="pageRefresh()">Xinyang Cheng</div>
@@ -79,6 +82,10 @@
                             <i class="fa-brands fa-weixin icon-narrow" id="weixin"></i>
                             <span>WeChat</span>
                         </a>
+                        <a href="templates/dev_history.html" class="contact" id="book" target="_blank">
+                            <i class="fa-solid fa-book-open" id="book-opening"></i>
+                            <span>Dev History</span>
+                        </a>
                         <!-- unused code 
                         <div id="sub-window" class="hidden">
                             <img src="images/wecom.png" style="height: 5.5%; width: 5.5%; margin-right:8px;" alt="WeCom">
@@ -94,7 +101,7 @@
                 <div class="hidden-line" id="section1"></div>
                 <h1>About</h1>
                 <div style="display: flex; flex-direction: row;">
-                    <img src="https://media.licdn.com/dms/image/D4E03AQGkEI9wv19w3Q/profile-displayphoto-shrink_800_800/0/1686149013444?e=1712188800&v=beta&t=4Q_iPt1Zu845wKunR1w5sQIWJ5QECpgYtxErWIenU3Q" class="author-avatar-narrow" alt="Xinyang Cheng">
+                    <img src="images/my_photo.jpg" class="author-avatar-narrow" alt="Xinyang Cheng">
                     <div class="loc-narrow" style="margin-left: 11.5px; align-items: center; font-size: 0.8rem;"><i class="fa-solid fa-location-dot"></i>&nbsp Boston, MA, US (current); Shanghai, CN</div>
                 </div>
                 <p>

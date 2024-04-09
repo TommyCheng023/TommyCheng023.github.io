@@ -23,6 +23,10 @@ body {
     --icon-envelope: #fff;
     --icon-github: #fff;
     --icon-dot: #fff;
+    --button-color: rgb(102, 2, 102);
+    --button-color-hover: rgb(255, 193, 255);
+    --sun-color: #fff;
+    --sun-color-hover: rgb(255, 42, 0);
     background-color: var(--bg-color);
 
     /* mobile version only */
@@ -45,6 +49,10 @@ body[data-theme='light_theme'] {
     --icon-envelope: #000000;
     --icon-github: #333;
     --icon-dot: #000000;
+    --button-color: rgb(255, 255, 125);
+    --button-color-hover: rgb(41, 0, 41);
+    --sun-color: #000;
+    --sun-color-hover: rgb(255, 255, 0);
     background-color: var(--bg-color);
 
     /* mobile version only */
@@ -85,6 +93,36 @@ body[data-theme='light_theme'] {
 .anim-text-2:hover {
     transform: scale(1.05);
     color: var(--Xinyang-Cheng)
+}
+#theme-button {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 8vw;
+    background-color: var(--button-color);
+    transition: all ease-in-out 0.3s;
+}
+.fa-sun {
+    transition: all ease-in-out 0.3s;
+    color: var(--sun-color);
+    font-size:large;
+}
+.fa-moon {
+    transition: all ease-in-out 0.3s;
+    color: var(--sun-color);
+    font-size:large;
+}
+#theme-button:hover {
+    background-color: var(--button-color-hover);
+}
+#theme-button:hover .fa-sun {
+    color: var(--sun-color-hover);
+}
+#theme-button:hover .fa-moon {
+    color: var(--sun-color-hover);
 }
 /* Main Page */
 .page-wrapper {
@@ -333,7 +371,7 @@ p, li {
 }
 
 /* mobile responsive */
-@media(max-width: 800px){
+@media(max-width: 995px){
     .navbar {
         display: none;
     }

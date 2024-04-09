@@ -55,6 +55,10 @@ It is now the main section of the webpage.
 - `Publications`: wait until my first essay is published 😂
 - `Research`: for the purpose of recording R&D experiences, this section is necessary to be independent from `Projects`
 
+## Feature Updates
+- Add `Development History` Section showing the update history of the website.
+- Change the `day/night` mode into a client-controllable feature. Remove the auto-change feature based on EST time zone.
+
 # Appreciation
 Thank you so much for visiting my repository and my personal website!!🙏
 

@@ -1,0 +1,45 @@
+.title404 {
+    background: -webkit-linear-gradient(#ff0004,rgb(102, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 5rem;
+    transition: transform 0.5s;
+}
+.before-clicked li {
+    padding-bottom: 2%;
+}
+
+#theButton, #theButton2 {
+    margin: auto auto;
+    color: black;
+    transition: all ease-out 0.35s;
+}
+
+#theButton:hover {
+    background-color: grey;
+    color: white;
+}
+#theButton2:hover {
+    background-color: grey;
+    color: white;
+}
+
+/* animation */
+.fade-out, .fade-in {
+    transition: opacity 1s fade-out;
+}
+  
+.fade-out {
+    opacity: 0;
+}
+  
+.fade-in {
+    opacity: 1;
+}
+
+/* secret update */
+.secret-line {
+    color: white;
+    filter: blur(5px);
+}

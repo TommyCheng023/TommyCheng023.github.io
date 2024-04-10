@@ -37,10 +37,13 @@
 }
 
 /* secret update */
+#after-clicked p {
+    color: rgb(255, 255, 208);
+}
 .secret-line {
     color: white;
     filter: blur(5px);
 }
 .secret-line:hover {
-    filter: blur(1px);
+    filter: blur(4.5px);
 }

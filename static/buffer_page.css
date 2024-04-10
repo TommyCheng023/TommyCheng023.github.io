@@ -25,21 +25,22 @@
     color: white;
 }
 
-/* animation */
-.fade-out, .fade-in {
-    transition: opacity 1s fade-out;
-}
-  
+/* animation */  
 .fade-out {
     opacity: 0;
+    transition: all ease-out 1.5s !important;
 }
   
 .fade-in {
     opacity: 1;
+    transition: opacity 1s fade-out;
 }
 
 /* secret update */
 .secret-line {
     color: white;
     filter: blur(5px);
+}
+.secret-line:hover {
+    filter: blur(1px);
 }

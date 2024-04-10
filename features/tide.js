@@ -15,19 +15,23 @@ function showAlert() {
 }
 
 function startFading() {
-    const disappearingArray = Array.from(document.getElementsByClassName('before-clicked'));
-
-    disappearingArray.forEach((element) => {
-        element.classList.add('fade-out');
-        setTimeout(() => {
-            element.style.display = 'none';
-        }, 2500);
-    });
+    processElement(0);
 
     setTimeout( () => {
         alert("🚨 Reload failed!")
         startAdding();
-    }, 3000);
+    }, 6000);
+}
+function processElement(index) {
+    const disappearingArray = Array.from(document.getElementsByClassName('before-clicked'));
+    if (index < disappearingArray.length) {
+        const element = disappearingArray[index];
+        element.classList.add('fade-out');
+        setTimeout(() => {
+            element.style.display = 'none';
+            processElement(index + 1);
+        }, 1500);
+    }
 }
 
 function startAdding() {

@@ -7,6 +7,7 @@ function alwaysNight() {
 }
 
 function showAlert() {
+    hideButton = document.getElementById('theButton').onclick = null; // disable the button
     alertMsg = document.getElementById('reload-for-first');
     alertMsg.style.display = 'block';
     setTimeout(() => {
@@ -15,7 +16,6 @@ function showAlert() {
 }
 
 function startFading() {
-    hideButton = document.getElementById('theButton').onclick = null; // disable the button
     processElement(0);
 
     setTimeout( () => {

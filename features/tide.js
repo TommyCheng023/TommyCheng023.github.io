@@ -39,10 +39,12 @@ function startAdding() {
 function sendBack() {
     const alertMsg2 = document.getElementById('reload-for-second');
     const alertMsg3 = document.getElementById('reload-for-third');
+    const hidedButton = document.getElementById('theButton2');
     alertMsg2.style.display = 'block';
 
     setTimeout(() => {
         alertMsg2.style.display = 'none';
+        hidedButton.style.display = 'none';
         alertMsg3.style.display = 'block';
         var link = document.createElement('a');
         link.href = 'https://xinyang-cheng.com/';

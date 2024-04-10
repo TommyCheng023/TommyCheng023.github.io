@@ -5,6 +5,11 @@ link: https://xinyang-cheng.com/
 
 <img width="64" alt="cxy" src="https://github.com/TommyCheng023/TommyCheng023.github.io/assets/115842289/650c326f-8dcf-4992-a970-590b6773839d">
 
+# New Updates!
+1. A theme switch button created for the web users. They can click on it to change between day mode and night mode!
+2. A `404` page is added to the website. When the client tries to enter unfinished pages or incorrect pages, this page will show up.
+  a. Secret updates are included in this page, check it out! :D
+
 # Brief Walkthrough (Web Users)
 - This is an interactive and mobile responsive personal website. 
 - **NEW FEATURE!!** The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone.

@@ -39,6 +39,7 @@
 /* secret update */
 #after-clicked p {
     color: rgb(255, 255, 208);
+    margin-left: 5%;
 }
 .secret-line {
     color: white;

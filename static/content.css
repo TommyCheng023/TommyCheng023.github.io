@@ -210,6 +210,9 @@ body[data-theme='light_theme'] {
 #weixin:hover {
     color: #7bb32e;
 }
+#book:hover {
+    color: goldenrod;
+}
 
 /* icon color */
 .fa-location-dot { color: var(--icon-dot); }
@@ -219,6 +222,7 @@ body[data-theme='light_theme'] {
 .fa-instagram { color: #e4405f; }
 .fa-weixin { color: #7bb32e; }
 .fa-discord { color: #7289da; }
+.fa-book-open { color: var(--icon-envelope); }
 
 /* WeCom Sub Window */
 #sub-window {

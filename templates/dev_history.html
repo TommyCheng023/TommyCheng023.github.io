@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/content.css" />
+        <link rel="stylesheet" href="../static/dev_history.css" />
+
+        <!-- web logo -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/cxy.png" />
+        <link rel="shortcut icon" type="image/png" sizes="32x32" href="images/cxy.png" />
+
+        <title>Development History</title>
+        <meta name="keywords" content="Xinyang Cheng, Cheng, Xinyang, Tommy, Xinyang (Tommy) Cheng, GitHub">
+        <meta name="author" content="Xinyang (Tommy) Cheng">
+
+        <!-- icon -->
+        <script src="https://kit.fontawesome.com/30316820a7.js" crossorigin="anonymous"></script>
+        <!-- custom features -->
+        <script src="../features/location_change.js"></script>
+        <script src="../features/day_night_logic.js"></script>
+        <script src="../features/refresh_logic.js"></script>
+    </head>
+    <body data-theme="light_theme">
+        <div class="navbar">
+            <div class="navbar-item anim-text-2" style="padding-left: 10%; font-size: 3vh; cursor: pointer" onclick="pageRefresh()">Xinyang Cheng</div>
+            <div class="navbar-item" style="font-size: 3vh; display: flex; align-items: center"><a href="../index.html" class="anim-text">Home Page</a></div>
+            <div class="navbar-item" style="font-size: 3vh; position: absolute; right: 0"><button id="theme-button" onclick="buttonThemePreference()"><i class="fa-solid fa-sun" id="toggle-icon"></i></button></div>
+        </div>
+        <div class="navbar-narrow">
+            <div class="navbar-item"><a href="../index.html">Return Home</a></div>
+        </div>
+        <div class="mobile-warning">View this page on a computer please.</div>
+        <div class="mobile-warning" style="margin-top: 0; font-size: 1rem;"> Normally, a mobile user cannot access this place. </div>
+        <div class="mobile-warning" style="margin-top: 0; font-size: 1rem;"> Stop inspecting and playing my code! :( </div>
+        <h1 class="titleDEV">Development History</h1>
+        <div class="dev-wrapper">
+            <div class="left-dev">
+                <div class="basic-block">
+                    <h3 style="margin-bottom: 0; margin-top: 0;">Website Developer: </h3>
+                    <h3 style="text-indent: 100px; margin-top: 0;">   Xinyang Cheng</h3>
+                    <h3></h3>
+                    <h3>Tech Used: <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i></h3>
+                </div>
+            </div>
+            <div class="right-dev">
+                <b class="changelog">Changelog</b>
+                <div class="change-date">2024-04-10</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag new">New</span>Initialize the changelog for the website that can be viewed by web users.</div>
+                    <div class="one-line"><span class="tag fixed">Fixed</span>Replace GitHub Pages default 404 page with the custom page.</div>
+                    <div class="one-line"><span class="tag improved">Improved</span>Improve the animation effects and the loading logic of the 404 page hidden feature.</div>
+                </div>
+                <div class="change-date">2024-04-09</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag new">New</span>Add theme button to allow users change page theme by themselves.</div>
+                    <div class="one-line"><span class="tag new">New</span>Design and apply a custom 404 page for the website. [Secret Updates!]</div>
+                </div>
+                <div class="change-date">2024-03-25</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag fixed">Fixed</span>Fix a theme autochanging logic issue.</div>
+                </div>
+                <div class="change-date">2024-03-24</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag new">New</span>Design and apply a logo for the whole website.</div>
+                </div>
+                <div class="change-date">2024-03-20</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag improved">Improved</span>Add refresh feature for the mobile navbar.</div>
+                </div>
+                <div class="change-date">2024-03-18</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag new">New</span>Web users can refresh the page by clicking `Xinyang Cheng` on the navbar.</div>
+                    <div class="one-line"><span class="tag new">New</span>Complete the script for web light/dark mode. The theme automatically switches at 19:00 and 6:00 EST.</div>
+                    <div class="one-line"><span class="tag new">New</span>Add the MapMyVisitors widget at the very bottom of the main page.</div>
+                </div>
+                <div class="change-date">2024-03-12</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag new">New</span>Add a tech stack showing skills with their logos in badges.</div>
+                    <div class="one-line"><span class="tag new">New</span>Apply a personal domain to the website.</div>
+                </div>
+                <div class="change-date">2024-02-04</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag improved">Improved</span>Apply navbar-call-scrolling logic.</div>
+                </div>
+                <div class="change-date">2024-01-29</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag fixed">Fixed</span>Modify sticky position for UI.</div>
+                </div>
+                <div class="change-date">2024-01-28</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag new">New</span>Upload downloadable resume. (update per month)</div>
+                </div>
+                <div class="change-date">2024-01-27</div>
+                <div class="update-block">
+                    <div class="one-line"><span class="tag new">New</span>Design an independent mobile template for the website.</div>
+                    <div class="one-line"><span class="tag new">New</span>Design the initial animation of the main page.</div>
+                    <div class="one-line"><span class="tag new">New</span>Build a basic structure for the web template.</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

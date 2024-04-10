@@ -51,12 +51,13 @@ function sendBack() {
     setTimeout(() => {
         alertMsg2.style.display = 'none';
         alertMsg3.style.display = 'block';
-        var link = document.createElement('a');
-        link.href = 'https://xinyang-cheng.com/';
-        link.innerText = '<RETURN>';
-        var container = document.getElementById('reload-for-third');
-        container.appendChild(link);
-        alert('✅ Reload succeeded! \n Click the `RETURN` tag to leave this page.');
+        // var link = document.createElement('a');
+        // link.href = 'https://xinyang-cheng.com/';
+        // link.innerText = '<RETURN>';
+        // var container = document.getElementById('reload-for-third');
+        // container.appendChild(link);
+        location.href = 'index.html';
+        alert('✅ Reload succeeded!');
     }, 5000);
 }
 

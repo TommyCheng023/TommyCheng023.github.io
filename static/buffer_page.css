@@ -33,7 +33,7 @@
   
 .fade-in {
     opacity: 1;
-    transition: opacity 1s fade-out;
+    transition: all ease-in 1.5s !important;
 }
 
 /* secret update */

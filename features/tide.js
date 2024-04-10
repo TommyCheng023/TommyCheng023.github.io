@@ -37,8 +37,8 @@ function processElement(index) {
 
 function startAdding() {
     const addElement = document.getElementById('after-clicked');
-    addElement.style.display = 'block';
     addElement.classList.add('fade-in');
+    addElement.style.display = 'block';
 }
 
 function sendBack() {
@@ -56,8 +56,8 @@ function sendBack() {
         link.innerText = '<RETURN>';
         var container = document.getElementById('reload-for-third');
         container.appendChild(link);
-        alert('✅ Reload succeeded! \n Click the `RETURN` to leave this page.');
-    }, 2000);
+        alert('✅ Reload succeeded! \n Click the `RETURN` tag to leave this page.');
+    }, 5000);
 }
 
 window.onload = alwaysNight;

@@ -5,11 +5,10 @@ link: https://xinyang-cheng.com/
 
 <img width="64" alt="cxy" src="https://github.com/TommyCheng023/TommyCheng023.github.io/assets/115842289/650c326f-8dcf-4992-a970-590b6773839d">
 
-# New Updates!
-1. A theme switch button created for the web users. They can click on it to change between day mode and night mode!
-2. A `404` page is added to the website. When the client tries to enter unfinished pages or incorrect pages, this page will show up.
-   - Secret updates are included in this page, check it out! :D
-3. A theme slider is added for the mobile users! They can click on it to switch between day mode and night mode!
+# New Updates
+Starting from `2024/4/17`, this section is not going to list new updates of the website. 
+
+Instead, it is strongly recommended to checkout [the website's changelog](https://xinyang-cheng.com/templates/dev_history.html) to view any **new features, bug fixes or design improvements**.
 
 # Brief Walkthrough (Web Users)
 - This is an interactive and mobile responsive personal website. 

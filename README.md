@@ -9,6 +9,7 @@ link: https://xinyang-cheng.com/
 1. A theme switch button created for the web users. They can click on it to change between day mode and night mode!
 2. A `404` page is added to the website. When the client tries to enter unfinished pages or incorrect pages, this page will show up.
    - Secret updates are included in this page, check it out! :D
+3. A theme slider is added for the mobile users! They can click on it to switch between day mode and night mode!
 
 # Brief Walkthrough (Web Users)
 - This is an interactive and mobile responsive personal website. 

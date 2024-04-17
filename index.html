@@ -24,6 +24,7 @@
         <script src="features/location_change.js"></script>
         <script src="features/day_night_logic.js"></script>
         <script src="features/refresh_logic.js"></script>
+        <script src="features/wecom_subwindow.js"></script>
     </head>
     <body data-theme='light_theme'>
         <div class="navbar">
@@ -40,7 +41,7 @@
             <div class="navbar-item"><a href="https://www.linkedin.com/in/xinyang-cheng-325825260" target="_blank"><i class="fa-brands fa-linkedin icon-narrow" id="LinkedIn"></i></a></div>
             <div class="navbar-item"><a href="https://github.com/TommyCheng023" target="_blank"><i class="fa-brands fa-github icon-narrow" id="github"></i></a></div>
             <div class="navbar-item"><a href="https://www.instagram.com/tommyyyy985/" target="_blank"><i class="fa-brands fa-instagram icon-narrow" id="ins"></i></a></div>
-            <div class="navbar-item"><a href="404.html"><i class="fa-brands fa-discord icon-narrow" id="discord"></i></a></div>
+            <div class="navbar-item"><a onclick="overlay_on()"><i class="fa-brands fa-weixin icon-narrow" id="weixin"></i></a></div>
         </div>
         <div class="page-wrapper">
             <div class="sidebar">
@@ -76,7 +77,7 @@
                             <i class="fa-brands fa-discord"></i>
                             <span>Discord</span>
                         </a>
-                        <a href="templates/wecom_connection.html" class="contact" id="wecom">
+                        <a onclick="overlay_on()" class="contact" id="wecom">
                             <i class="fa-brands fa-weixin icon-narrow" id="weixin"></i>
                             <span>WeChat</span>
                         </a>
@@ -335,6 +336,20 @@
                 <!-- <div class="hide-for-mobile">
                     <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d=5FnDs_Og83RTio9zkVAN93mHUNmtRCcJ0nnkRYdytAU&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
                 </div> -->
+            </div>
+        </div>
+        <div id="overlay">
+            <div id="text">
+                <img src="images/wecom_logo.webp" style="width: 100px; height: 100px; margin-right: 2%; margin-left: 1%;" alt="WeCom">
+                Due to privacy reason, we can connect through WeCom instead! :D
+            </div>
+            <div id="mobile-text-mobile" style="text-align: center;">
+                Scan my WeCom QR Code to connect!
+                <img src="images/wecom_logo.webp" style="width: 40px; height: 40px; margin-right: 1%;" alt="WeCom">
+            </div>
+            <div style="display: flex; justify-content: center;"><img src="images/wecom_code.jpg" style="position: absolute; top: 35%; " alt="WeCom_QR_Code"></div>
+            <div style="display: flex; justify-content: center">
+                <button class="wecom-button"  onclick="overlay_off()">Close</button>
             </div>
         </div>
         <footer>

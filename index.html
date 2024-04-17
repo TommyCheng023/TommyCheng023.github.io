@@ -96,6 +96,15 @@
                 </div>
             </div>
             <div class="main-paragraph">
+                <!-- Mobile Toggle Button -->
+                <div class="day-night-button">
+                    <p>Change theme preference: </p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round" onclick="buttonThemePreference()"></span>
+                    </label>
+                </div>
+
                 <div class="hidden-line" id="section1"></div>
                 <h1>About</h1>
                 <div style="display: flex; flex-direction: row;">
@@ -228,14 +237,15 @@
                 </ul>
 
                 <!-- Map Widget -->
-                <div class="hide-for-mobile">
+                <!-- <div class="hide-for-mobile">
                     <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=n&d=5FnDs_Og83RTio9zkVAN93mHUNmtRCcJ0nnkRYdytAU&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
-                </div>
+                </div> -->
             </div>
         </div>
         <footer>
             <p id="footer-text">© 2024 Personal Website.</p>
             <p id="footer-text">Developed by Xinyang Cheng. Powered by GitHub Pages.</p>
         </footer>
+        <script src="features/text_change.js"></script>
     </body>
 </html>

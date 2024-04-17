@@ -13,7 +13,7 @@ link: https://xinyang-cheng.com/
 
 # Brief Walkthrough (Web Users)
 - This is an interactive and mobile responsive personal website. 
-- **NEW FEATURE!!** The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone.
+- The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone. You can change the theme by yourself by clicking the button on the right side of the navbar.
 
 Except for [BUCSSA](https://www.bucssa.org/), all mentioned industries or organizations are linked to their official websites.
 ## Left Menu
@@ -39,7 +39,7 @@ When clicking on `WeChat`, you'll enter another page displaying the QR Code of m
 You can return to the main page by clicking on `Xinyang Cheng` in the navbar
 
 # Brief Walkthrough (Mobile Users)
-- **NEW FEATURE!!** The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone.
+- The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone.
 
 ## Navbar
 - My contacts are moved to the navbar with icons displayed only. Clicking on the icons will send you to my profiles.
@@ -53,17 +53,18 @@ This division is removed in mobile template.
 ## Right Division
 It is now the main section of the webpage.
 
+At the very beginning of the division, you'll see a slider that allows you to switch between day and night theme.
+
 # Future Expectations
 ## apply framework
 - I'm considering using `Angular` or `React` to my personal website.
 
 ## New Sections
 - `Publications`: wait until my first essay is published 😂
-- `Research`: for the purpose of recording R&D experiences, this section is necessary to be independent from `Projects`
+- `Research`: for the purpose of recording R&D experiences
+- `Resume`: an animated subpage from the home page dynamically showing my experiences
 
 ## Feature Updates
-- Add `Development History` Section showing the update history of the website.
-- Change the `day/night` mode into a client-controllable feature. Remove the auto-change feature based on EST time zone.
 - Connect with some existing repository as my subdomain.
 
 # Appreciation

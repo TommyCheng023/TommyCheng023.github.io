@@ -87,19 +87,37 @@ h3 { font-size: 1.75rem; }
 }
   
 @media(max-width: 800px) {
-    .mobile-warning {
-        display: block;
-        font-size: x-large;
-        background: -webkit-linear-gradient(#ff0000,rgb(126, 158, 0));
+    .titleDEV {
+        display: none;
+    }
+    .changelog {
+        background: -webkit-linear-gradient(#2200ff,rgb(0, 195, 255));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center;
-        margin-top: 50%;
+        font-size: 3rem;
+        margin: auto;
+        margin-top: 4vh;
+        margin-bottom: 1vh;
+        border-bottom: none;
     }
     .dev-wrapper {
+        flex-direction: column;
+    }
+    .left-dev {
         display: none;
     }
-    .titleDEV {
-        display: none;
+    .right-dev {
+        padding-left: 0;
+        margin-left: 0;
+        border-left: none;
+        width: 95%;
+    }
+    .change-date {
+        margin-bottom: 2%;
+        border-bottom: var(--text-color) thin solid;
+    }
+    .update-block {
+        line-height: 150%;
     }
 }

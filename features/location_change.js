@@ -7,7 +7,7 @@ function changeText() {
         isClicked = true;
     }
     else {
-        btn.textContent = 'Boston, US';
+        btn.textContent = 'Ann Arbor, US';
         isClicked = false;
     }
 };

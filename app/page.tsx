@@ -4,7 +4,8 @@ import RevealOnScroll from "./components/reveal-on-scroll";
 const navItems = [
   // { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
+  { href: "#research", label: "Research" },
+  { href: "#experience", label: "Work" },
   { href: "#teaching", label: "Teaching" },
   { href: "#contact", label: "Contact" },
 ];
@@ -66,6 +67,31 @@ const selectedProjects = [
   },
 ];
 
+const researchExperiences = [
+  {
+    tag: "Now",
+    summary:
+      "I am actively open to research opportunities in AI, data science, and related technical domains.",
+    href: "mailto: xinyangc@umich.edu",
+    cta: "Reach out",
+    featured: true,
+  },
+  {
+    title: "Inferring Cosmological Parameters from Mass Maps",
+    tag: "2026",
+    pi: { name: "Jeffery Regier", href: "https://sites.lsa.umich.edu/regier/" },
+    phdLead: { name: "Tim White", href: "https://timwhite0.github.io/" },
+    progress: "In progress...",
+  },
+  {
+    title: "Historical Legacies in Arab Politics",
+    tag: "2025",
+    pi: { name: "Mark Tessler", href: "https://lsa.umich.edu/polisci/people/faculty/tessler.html" },
+    phdLead: { name: "Hood Ahmed", href: "https://lsa.umich.edu/polisci/people/graduate-students/hood-ahmed.html" },
+    progress: "Delivered a presentation on the findings in a poster symposium.",
+  },
+];
+
 const skills = [
   { label: "Python", src: "/legacy/images/dev-logos/python-5.svg" },
   { label: "C++", src: "/legacy/images/dev-logos/c.svg" },
@@ -118,11 +144,11 @@ const teachingEntries = [
     meta: "GEC Academy · 2023",
   },
   {
-    title: "High School Interview Advisor - ZhenghanSun",
+    title: "High School Interview Advisor for ZhenghanSun",
     meta: "MyMentor · 2024",
   },
   {
-    title: "High School Interview Advisor - Qimiao Zou",
+    title: "High School Interview Advisor for Qimiao Zou",
     meta: "MyMentor · 2023",
   },
 ];
@@ -335,6 +361,81 @@ export default function HomePage() {
                   <li key={note}>{note}</li>
                 ))}
               </ul>
+              <a href={project.href} className="projectLink" target="_blank" rel="noreferrer">
+                {project.cta}
+              </a>
+            </RevealOnScroll>
+          ))}
+        </div>
+      </RevealOnScroll>
+
+      <RevealOnScroll as="section" id="research" className="section">
+        <div className="sectionHeading">
+          <p className="eyebrow">diving in the ocean of academia</p>
+          <h2>Research Experience</h2>
+        </div>
+
+        <div className="projectGrid">
+          {researchExperiences.map((project, index) => (
+            <RevealOnScroll
+              key={project.title}
+              as="article"
+              className={project.featured ? "projectCard researchHighlightCard" : "projectCard"}
+              delay={index * 120}
+            >
+              {project.featured ? (
+                <div className="researchHighlightContent">
+                  <span className="projectTag">{project.tag}</span>
+                  <div className="researchPlus" aria-hidden="true">
+                    +
+                  </div>
+                </div>
+              ) : (
+                <div className="projectCardTop">
+                  <span className="projectTag">{project.tag}</span>
+                  <span className="projectArrow">{project.tag}</span>
+                </div>
+              )}
+              <h3>{project.title}</h3>
+              {project.featured ? (
+                <>
+                  <p>{project.summary}</p>
+                  {/* <ul className="projectList">
+                    {project.notes.map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul> */}
+                </>
+              ) : project.pi && project.phdLead ? (
+                <div className="researchMetaList">
+                  <p className="researchMetaRow">
+                    <span className="researchMetaLabel">Professor:</span>{" "}
+                    <a
+                      href={project.pi.href}
+                      className="projectLink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {project.pi.name}
+                    </a>
+                  </p>
+                  <p className="researchMetaRow">
+                    <span className="researchMetaLabel">PhD Lead:</span>{" "}
+                    <a
+                      href={project.phdLead.href}
+                      className="projectLink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {project.phdLead.name}
+                    </a>
+                  </p>
+                  <p className="researchMetaRow">
+                    <span className="researchMetaLabel">Status:</span>{" "}
+                    {project.progress}
+                  </p>
+                </div>
+              ) : null}
               <a href={project.href} className="projectLink" target="_blank" rel="noreferrer">
                 {project.cta}
               </a>

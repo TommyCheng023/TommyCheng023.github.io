@@ -576,6 +576,27 @@ ul {
     var(--surface-strong);
 }
 
+.researchHighlightCard {
+  background:
+    radial-gradient(circle at center, rgba(17, 72, 65, 0.08), transparent 58%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.32), transparent 40%),
+    var(--surface-strong);
+}
+
+.researchHighlightContent {
+  display: grid;
+  justify-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+
+.researchPlus {
+  line-height: 1;
+  font-size: clamp(4rem, 8vw, 5.8rem);
+  font-weight: 300;
+  color: rgba(17, 72, 65, 0.42);
+}
+
 .projectCardTop {
   display: flex;
   align-items: center;
@@ -598,6 +619,23 @@ ul {
 .projectCard p {
   color: var(--muted);
   line-height: 1.72;
+}
+
+.researchMetaList {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0 1.35rem;
+}
+
+.researchMetaRow {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.researchMetaLabel {
+  color: var(--text);
+  font-weight: 700;
 }
 
 .projectList {

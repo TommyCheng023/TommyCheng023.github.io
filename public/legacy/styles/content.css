@@ -90,6 +90,10 @@ body[data-theme='light_theme'] {
     transition: all 0.5s ease;
     color: grey;
 }
+.mobile-home-link {
+    color: inherit;
+    text-decoration: none;
+}
 .anim-text-2:hover {
     transform: scale(1.05);
     color: var(--Xinyang-Cheng)
@@ -450,6 +454,9 @@ p, li {
     }
     .navbar-item {
         padding-right: 1%;
+    }
+    .mobile-new-home {
+        display: none;
     }
     .author_avatar {
         display: none;

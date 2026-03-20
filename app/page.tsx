@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileCardCarousel from "./components/mobile-card-carousel";
 import RevealOnScroll from "./components/reveal-on-scroll";
 
 const navItems = [
@@ -129,7 +130,7 @@ const workExperiences = [
     bullets: [
       "Contents missing in this section... I'm aware of that.",
       "If I keep this section it will be too similar to a LinkedIn profile and make my webpage too long.",
-      "Do you think I should make this a timeline or just remove it...",
+      "Do you think I should make this a timeline or just remove it?",
     ],
   },
 ];
@@ -213,6 +214,88 @@ function MobileIcon({ icon }: { icon: string }) {
 }
 
 export default function HomePage() {
+  const projectCards = selectedProjects.map((project, index) => (
+    <RevealOnScroll
+      key={project.title}
+      as="article"
+      className="projectCard"
+      delay={index * 120}
+    >
+      <div className="projectCardTop">
+        <span className="projectTag">{project.tag}</span>
+        <span className="projectArrow">{project.tag}</span>
+      </div>
+      <h3>{project.title}</h3>
+      <p>{project.summary}</p>
+      <ul className="projectList">
+        {project.notes.map((note) => (
+          <li key={note}>{note}</li>
+        ))}
+      </ul>
+      <a href={project.href} className="projectLink" target="_blank" rel="noreferrer">
+        {project.cta}
+      </a>
+    </RevealOnScroll>
+  ));
+
+  const researchCards = researchExperiences.map((project, index) => (
+    <RevealOnScroll
+      key={project.title ?? `${project.tag}-${index}`}
+      as="article"
+      className={project.featured ? "projectCard researchHighlightCard" : "projectCard"}
+      delay={index * 120}
+    >
+      {project.featured ? (
+        <div className="researchHighlightContent">
+          <span className="projectTag">{project.tag}</span>
+          <div className="researchPlus" aria-hidden="true">
+            +
+          </div>
+        </div>
+      ) : (
+        <div className="projectCardTop">
+          <span className="projectTag">{project.tag}</span>
+          <span className="projectArrow">{project.tag}</span>
+        </div>
+      )}
+      <h3>{project.title}</h3>
+      {project.featured ? (
+        <p>{project.summary}</p>
+      ) : project.pi && project.phdLead ? (
+        <div className="researchMetaList">
+          <p className="researchMetaRow">
+            <span className="researchMetaLabel">Professor:</span>{" "}
+            <a
+              href={project.pi.href}
+              className="projectLink"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {project.pi.name}
+            </a>
+          </p>
+          <p className="researchMetaRow">
+            <span className="researchMetaLabel">PhD Lead:</span>{" "}
+            <a
+              href={project.phdLead.href}
+              className="projectLink"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {project.phdLead.name}
+            </a>
+          </p>
+          <p className="researchMetaRow">
+            <span className="researchMetaLabel">Status:</span> {project.progress}
+          </p>
+        </div>
+      ) : null}
+      <a href={project.href} className="projectLink" target="_blank" rel="noreferrer">
+        {project.cta}
+      </a>
+    </RevealOnScroll>
+  ));
+
   return (
     <main className="shell">
       <header className="topbar">
@@ -342,31 +425,10 @@ export default function HomePage() {
           <h2>Projects</h2>
         </div>
 
-        <div className="projectGrid">
-          {selectedProjects.map((project, index) => (
-            <RevealOnScroll
-              key={project.title}
-              as="article"
-              className="projectCard"
-              delay={index * 120}
-            >
-              <div className="projectCardTop">
-                <span className="projectTag">{project.tag}</span>
-                <span className="projectArrow">{project.tag}</span>
-              </div>
-              <h3>{project.title}</h3>
-              <p>{project.summary}</p>
-              <ul className="projectList">
-                {project.notes.map((note) => (
-                  <li key={note}>{note}</li>
-                ))}
-              </ul>
-              <a href={project.href} className="projectLink" target="_blank" rel="noreferrer">
-                {project.cta}
-              </a>
-            </RevealOnScroll>
-          ))}
-        </div>
+        <div className="desktopCardGrid projectGrid">{projectCards}</div>
+        <MobileCardCarousel ariaLabel="Projects mobile carousel">
+          {projectCards}
+        </MobileCardCarousel>
       </RevealOnScroll>
 
       <RevealOnScroll as="section" id="research" className="section">
@@ -375,73 +437,10 @@ export default function HomePage() {
           <h2>Research Experience</h2>
         </div>
 
-        <div className="projectGrid">
-          {researchExperiences.map((project, index) => (
-            <RevealOnScroll
-              key={project.title}
-              as="article"
-              className={project.featured ? "projectCard researchHighlightCard" : "projectCard"}
-              delay={index * 120}
-            >
-              {project.featured ? (
-                <div className="researchHighlightContent">
-                  <span className="projectTag">{project.tag}</span>
-                  <div className="researchPlus" aria-hidden="true">
-                    +
-                  </div>
-                </div>
-              ) : (
-                <div className="projectCardTop">
-                  <span className="projectTag">{project.tag}</span>
-                  <span className="projectArrow">{project.tag}</span>
-                </div>
-              )}
-              <h3>{project.title}</h3>
-              {project.featured ? (
-                <>
-                  <p>{project.summary}</p>
-                  {/* <ul className="projectList">
-                    {project.notes.map((note) => (
-                      <li key={note}>{note}</li>
-                    ))}
-                  </ul> */}
-                </>
-              ) : project.pi && project.phdLead ? (
-                <div className="researchMetaList">
-                  <p className="researchMetaRow">
-                    <span className="researchMetaLabel">Professor:</span>{" "}
-                    <a
-                      href={project.pi.href}
-                      className="projectLink"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {project.pi.name}
-                    </a>
-                  </p>
-                  <p className="researchMetaRow">
-                    <span className="researchMetaLabel">PhD Lead:</span>{" "}
-                    <a
-                      href={project.phdLead.href}
-                      className="projectLink"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {project.phdLead.name}
-                    </a>
-                  </p>
-                  <p className="researchMetaRow">
-                    <span className="researchMetaLabel">Status:</span>{" "}
-                    {project.progress}
-                  </p>
-                </div>
-              ) : null}
-              <a href={project.href} className="projectLink" target="_blank" rel="noreferrer">
-                {project.cta}
-              </a>
-            </RevealOnScroll>
-          ))}
-        </div>
+        <div className="desktopCardGrid projectGrid">{researchCards}</div>
+        <MobileCardCarousel ariaLabel="Research mobile carousel">
+          {researchCards}
+        </MobileCardCarousel>
       </RevealOnScroll>
 
       <RevealOnScroll as="section" id="experience" className="section">

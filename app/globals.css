@@ -563,6 +563,10 @@ ul {
   gap: 1.25rem;
 }
 
+.mobileCarouselShell {
+  display: none;
+}
+
 .projectGrid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -698,7 +702,7 @@ ul {
   position: absolute;
   inset: 0 auto 0 0;
   width: 4px;
-  background: linear-gradient(180deg, #e6a14b 0%, #f2ba73 100%);
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-strong) 100%);
 }
 
 .experienceItem h3 {
@@ -889,6 +893,69 @@ ul {
 
   .contactBand {
     gap: 1rem;
+  }
+
+  .desktopCardGrid {
+    display: none;
+  }
+
+  .mobileCarouselShell {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .mobileCarouselControls {
+    display: flex;
+    justify-content: center;
+    gap: 0.85rem;
+  }
+
+  .mobileCarouselButton {
+    width: 2.6rem;
+    height: 2.6rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255, 249, 241, 0.9);
+    color: var(--accent-strong);
+    font: inherit;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      background 180ms ease,
+      color 180ms ease;
+  }
+
+  .mobileCarouselButton:hover {
+    transform: translateY(-1px);
+    border-color: rgba(17, 72, 65, 0.24);
+    background: linear-gradient(135deg, var(--accent) 0%, #15554c 100%);
+    color: #fff;
+  }
+
+  .mobileCarouselTrack {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 0.2rem;
+  }
+
+  .mobileCarouselTrack::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobileCarouselSlide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+
+  .mobileCarouselSlide .projectCard {
+    min-height: 100%;
   }
 }
 

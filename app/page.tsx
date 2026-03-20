@@ -51,7 +51,7 @@ const selectedProjects = [
     title: "Gemini Flights Manager",
     tag: "2023",
     summary:
-      "A React.ja comprehensive backend system built using FastAPI, designed for managing and simulating flight-related operations.s website built with the BUCSSA Tech Department 2023 team.",
+      "A comprehensive backend system built using FastAPI, designed for managing and simulating flight-related operations.s website built with the BUCSSA Tech Department 2023 team.",
     notes: ["FastAPI", "Firebase", "VertexAI", "Streamlit", "SQLite"],
     href: "https://github.com/TommyCheng023/Gemini_Flights_Manager",
     cta: "View repository",
@@ -514,8 +514,7 @@ export default function HomePage() {
 
       <footer className="siteFooter">
         <p>© Tommy&apos;s Personal Website.</p>
-        <p>Developed by Xinyang Cheng. Powered by Next.js.</p>
-        <p>⚠️ This version is still under construction. Use the <a href="/legacy" className="hyperlinked_text">legacy mode</a>!</p>
+        <p>Developed by Xinyang Cheng. Powered by Next.js. Deployed on Vercel.</p>
       </footer>
     </main>
   );

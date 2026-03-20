@@ -6,19 +6,25 @@ link: https://xinyang-cheng.com/
 <img width="64" alt="cxy" src="https://github.com/TommyCheng023/TommyCheng023.github.io/assets/115842289/650c326f-8dcf-4992-a970-590b6773839d">
 
 # New Updates
-Starting from `2024/4/17`, this section is not going to list new updates of the website. 
+**⚠️ Starting from `2024/4/17`, this section is not going to list new updates of the website.**
 
-Instead, it is strongly recommended to checkout [the website's changelog](https://xinyang-cheng.com/templates/dev_history.html) to view any **new features, bug fixes or design improvements**.
+Instead, it is strongly recommended to checkout [the website's changelog](https://www.xinyang-cheng.com/legacy/dev_history.html) to view any **new features, bug fixes or design improvements**.
 
-# Brief Walkthrough (Web Users)
+# Current Mode
+Built by `Next.js`. The current homepage presents an interactive, unique-designed personal portfolio of myself. :D
+
+More updates soon...
+
+# Legacy Mode
+## Brief Walkthrough (Web Users)
 - This is an interactive and mobile responsive personal website. 
 - The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone. You can change the theme by yourself by clicking the button on the right side of the navbar.
 
 Except for [BUCSSA](https://www.bucssa.org/), all mentioned industries or organizations are linked to their official websites.
-## Left Menu
+### Left Menu
 A menu holding a sticky position displaying my `current location`(click on it will change into my `home location`) as well as a list of contacts, including `email address`, `LinkedIn`, `GitHub`, `Instagram`, `Discord` and `WeChat`(which is actually `WeCom` for privacy reasons).
 
-## Right Division
+### Right Division
 The main content is divided into four sections: `About`, `Projects`, `Teaching` and `Advising`.
 
 - `About`: It starts with an introduction in the third-person, followed by a button where you can download my resume as `PDF` if you click on it. My resume will be updated once a month.
@@ -29,44 +35,44 @@ The main content is divided into four sections: `About`, `Projects`, `Teaching` 
 - `Teaching`: This section contains all experiences I had in the past at specific education industries.
 - `Advising`: This section displays students I've advised, mainly on high school and university applications. If possible, their offers may be updated in the website!
 - `MapMyVisitors`: I added an external source from [MapMyVisitors](https://mapmyvisitors.com/) to check my web visitors, which will be displayed at the bottom of the page. 
-## Navbar
+### Navbar
 **You can go to each section without scrolling yourself by clicking on the contents of the navbar.**
 
-## WeCom Page
+### WeCom Page
 When clicking on `WeChat`, you'll enter another page displaying the QR Code of my `WeCom`. Due to the privacy reason of my personal accounts as well as the privacy policy of `WeChat`, I cannot display my account through a link.
 
 You can return to the main page by clicking on `Xinyang Cheng` in the navbar
 
-# Brief Walkthrough (Mobile Users)
+## Brief Walkthrough (Mobile Users)
 - The webpage will be displayed in a custom dark mode from 19:00 to 6:00, at Eastern Daylight Time Zone.
 
-## Navbar
+### Navbar
 - My contacts are moved to the navbar with icons displayed only. Clicking on the icons will send you to my profiles.
 - WeCom page is inaccessible in mobile template.
 - The map widget is removed in mobile template.
 
 
-## Left Menu
+### Left Menu
 This division is removed in mobile template.
 
-## Right Division
+### Right Division
 It is now the main section of the webpage.
 
 At the very beginning of the division, you'll see a slider that allows you to switch between day and night theme.
 
 # Future Expectations
-## apply framework
-- I'm considering using `Angular` or `React` to my personal website.
+### apply framework ✅
+✅ I'm considering using `Angular` or `React` to my personal website.
 
-## New Sections
+### New Sections
 - `Publications`: wait until my first essay is published 😂
-- `Research`: for the purpose of recording R&D experiences
+✅ `Research`: for the purpose of recording R&D experiences
 - `Resume`: an animated subpage from the home page dynamically showing my experiences
 
-## Feature Updates
+### Feature Updates
 - Connect with some existing repository as my subdomain.
 
-# Appreciation
+# Appreciates
 Thank you so much for visiting my repository and my personal website!!🙏
 
 If you have any further suggestions on my code and my layout, feel free to contact me!

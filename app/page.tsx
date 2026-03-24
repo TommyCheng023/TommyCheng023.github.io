@@ -6,7 +6,7 @@ const navItems = [
   // { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#research", label: "Research" },
-  { href: "#experience", label: "Work" },
+  // { href: "#experience", label: "Work" },
   { href: "#teaching", label: "Teaching" },
   { href: "#contact", label: "Contact" },
 ];
@@ -443,7 +443,7 @@ export default function HomePage() {
         </MobileCardCarousel>
       </RevealOnScroll>
 
-      <RevealOnScroll as="section" id="experience" className="section">
+      {/* <RevealOnScroll as="section" id="experience" className="section">
         <div className="sectionHeading">
           <p className="eyebrow">Timeline or cards?</p>
           <h2>Work Experience</h2>
@@ -467,7 +467,7 @@ export default function HomePage() {
             </RevealOnScroll>
           ))}
         </div>
-      </RevealOnScroll>
+      </RevealOnScroll> */}
 
       <RevealOnScroll as="section" id="teaching" className="section mentorshipSection">
         <div className="sectionHeading">

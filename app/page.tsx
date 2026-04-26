@@ -68,7 +68,29 @@ const selectedProjects = [
   },
 ];
 
-const researchExperiences = [
+type ResearchLink = {
+  name?: string;
+  href: string;
+  label?: string;
+};
+
+type ResearchExperience = {
+  title?: string;
+  tag: string;
+  summary?: string;
+  href?: string;
+  cta?: string;
+  featured?: boolean;
+  pi?: ResearchLink;
+  phdLead?: ResearchLink;
+  progress?: string;
+  repository?: {
+    href: string;
+    label: string;
+  };
+};
+
+const researchExperiences: ResearchExperience[] = [
   {
     tag: "Now",
     summary:
@@ -82,7 +104,11 @@ const researchExperiences = [
     tag: "2026",
     pi: { name: "Jeffery Regier", href: "https://sites.lsa.umich.edu/regier/" },
     phdLead: { name: "Tim White", href: "https://timwhite0.github.io/" },
-    progress: "In progress...",
+    progress: "Delivered a presentation on the findings in a poster symposium. Working on the paper...",
+    repository: {
+      href: "https://github.com/prob-ml/blissWL",
+      label: "View open-source",
+    },
   },
   {
     title: "Historical Legacies in Arab Politics",
@@ -290,9 +316,21 @@ export default function HomePage() {
           </p>
         </div>
       ) : null}
-      <a href={project.href} className="projectLink" target="_blank" rel="noreferrer">
-        {project.cta}
-      </a>
+      {project.repository ? (
+        <a
+          href={project.repository.href}
+          className="projectLink"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {project.repository.label}
+        </a>
+      ) : null}
+      {project.href && project.cta ? (
+        <a href={project.href} className="projectLink" target="_blank" rel="noreferrer">
+          {project.cta}
+        </a>
+      ) : null}
     </RevealOnScroll>
   ));
 
